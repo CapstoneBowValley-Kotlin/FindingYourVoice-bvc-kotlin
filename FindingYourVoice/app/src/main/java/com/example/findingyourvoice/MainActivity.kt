@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val myIntent = Intent(this, Resources::class.java)
+
         // Reference home_button
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
@@ -20,5 +21,12 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(myIntent)
         }
+        FYV_button.setOnClickListener {
+      val intent =Intent(this,FindingYourVoice::class.java)
+          startActivity(intent)
+        }
+
+
+
     }
 }

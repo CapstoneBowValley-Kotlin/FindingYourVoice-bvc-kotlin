@@ -69,10 +69,10 @@
             android:text="Employment Standards" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/FYV_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Finding Your Voice" />
+            android:text="@string/finding_your_voice" />
 
         <Button
             android:id="@+id/resource_button"
