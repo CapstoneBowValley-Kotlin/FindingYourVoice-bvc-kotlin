@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FindingYourVoice</string>
+    <string name="intro">These three examples are the real life experience of  workers’. The options and decisions provided will not apply to every situation you encounter in the work place, but as you work through them, they will show you how knowledge of the correct legislation and protections can help you make choices that work best for you.
+
+</string>
+    <string name="finding_your_voice">Finding Your Voice</string>
 </resources>
