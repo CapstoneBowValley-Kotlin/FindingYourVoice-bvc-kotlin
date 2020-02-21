@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Disclaimers"></activity>
         <activity android:name=".Resources" />
-        <activity android:name=".KnowYourRights" />
         <activity android:name=".FindingYourVoice" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -20,6 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.knowyourrights.KnowYourRights" />
     </application>
 
 </manifest>

@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_resources.*
 
 class Resources : AppCompatActivity() {
@@ -18,7 +17,7 @@ class Resources : AppCompatActivity() {
         // Reference home_button
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
-        home_button.setOnClickListener {
+        KYRHome_button.setOnClickListener {
             Log.d("MAINACTIVITY", "Button is clicked")
 
             startActivity(myIntent)

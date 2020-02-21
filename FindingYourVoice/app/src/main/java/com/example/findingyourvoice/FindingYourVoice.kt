@@ -11,7 +11,7 @@ class FindingYourVoice : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finding_your_voice)
         val intent = Intent(this,MainActivity::class.java)
-        home_button.setOnClickListener {
+        KYRHome_button.setOnClickListener {
             startActivity(intent)
         }
     }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.knowyourrights.KnowYourRights
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +27,10 @@ class MainActivity : AppCompatActivity() {
           startActivity(intent)
         }
 
-
+        KYR_button.setOnClickListener {
+            val intent =Intent(this, KnowYourRights::class.java)
+            startActivity(intent)
+        }
 
     }
 }

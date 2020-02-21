@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/home_button"
+        android:id="@+id/KYRHome_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
