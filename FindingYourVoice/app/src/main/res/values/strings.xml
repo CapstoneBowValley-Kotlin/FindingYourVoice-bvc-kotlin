@@ -19,4 +19,13 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="ohs">Occupational Health and Safety </string>
     <string name="empstandard">Employment Satndards</string>
     <string name="human_rights">Human Rights</string>
+    <string name="alberta_workers_health_care_centre">Alberta Workers Health Care Centre</string>
+    <string name="visit_https_workershealthcentre_ca">Visit: https://workershealthcentre.ca/</string>
+    <string name="calgary_workers_resource_centre">Calgary Workers Resource Centre</string>
+    <string name="visit_http_www_helpwrc_org">Visit: http://www.helpwrc.org/</string>
+    <string name="or_call_403_264_8100">Or call: (403)-264-8100</string>
+    <string name="home_Resources">Home</string>
+    <string name="or_call_1_780_486_9009">Or call: 1-(780)-486-9009</string>
+    <string name="finding_your_voicepage">Finding Your Voice</string>
+    <string name="know_your_rightspage">Know Your Rights</string>
 </resources>
