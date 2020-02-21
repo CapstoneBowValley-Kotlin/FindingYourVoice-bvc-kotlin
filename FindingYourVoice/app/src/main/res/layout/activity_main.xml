@@ -15,7 +15,7 @@
         android:layout_marginTop="59dp"
         android:layout_marginEnd="184dp"
         android:layout_marginRight="184dp"
-        android:text="Please select from the following..."
+        android:text="@string/please_select_from_the_following"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="186dp"
         android:layout_marginRight="186dp"
         android:layout_marginBottom="460dp"
-        android:text="MENU"
+        android:text="@string/menu"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,24 +51,6 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/button13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Occupational Health and Safety (O.H.S)" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Human Rights" />
-
-        <Button
-            android:id="@+id/button15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Employment Standards" />
-
-        <Button
             android:id="@+id/FYV_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,25 +60,13 @@
             android:id="@+id/resource_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resources" />
+            android:text="@string/resources" />
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/Funders_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contact Us" />
-
-        <Button
-            android:id="@+id/button19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Social Media" />
-
-        <Button
-            android:id="@+id/button20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Feed Back" />
+            android:text="@string/funders_disclaimers" />
     </LinearLayout>
 
     <EditText
@@ -110,7 +80,7 @@
         android:layout_marginRight="104dp"
         android:layout_marginBottom="28dp"
         android:ems="10"
-        android:hint="Search..."
+        android:hint="@string/search"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"

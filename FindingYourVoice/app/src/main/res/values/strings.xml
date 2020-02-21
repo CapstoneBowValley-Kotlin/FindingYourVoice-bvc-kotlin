@@ -5,4 +5,9 @@
 </string>
     <string name="finding_your_voice">Finding Your Voice</string>
     <string name="home">HOME</string>
+    <string name="funders_disclaimers">Funders/Disclaimers</string>
+    <string name="resources">Resources</string>
+    <string name="menu">MENU</string>
+    <string name="please_select_from_the_following">Please select from the following...</string>
+    <string name="search">Search...</string>
 </resources>
