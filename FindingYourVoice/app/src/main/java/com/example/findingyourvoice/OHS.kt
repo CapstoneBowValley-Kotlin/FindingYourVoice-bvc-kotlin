@@ -5,33 +5,26 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
-import com.example.knowyourrights.KnowYourRights
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_resources.*
 
-class MainActivity : AppCompatActivity() {
+class OHS : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val myIntent = Intent(this, Resources::class.java)
+        setContentView(R.layout.activity_ohs)
 
+        // Intent: Switch Pages. Switch to Home Page (ResourcesMainActivity)
+        val myIntent = Intent(this, MainActivity::class.java)
         // Reference home_button
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
-        resource_button.setOnClickListener {
-            Log.d("RESOURCES", "Button is clicked")
+
+        KYRHome_button.setOnClickListener {
+            Log.d("MAINACTIVITY", "Button is clicked")
 
             startActivity(myIntent)
         }
-        FYV_button.setOnClickListener {
-      val intent =Intent(this,FindingYourVoice::class.java)
-          startActivity(intent)
-        }
 
-        KYR_button.setOnClickListener {
-            val intent =Intent(this, KnowYourRights::class.java)
-            startActivity(intent)
-        }
 
     }
 
