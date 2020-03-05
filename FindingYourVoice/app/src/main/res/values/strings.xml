@@ -29,4 +29,7 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="know_your_rightspage">Know Your Rights</string>
     <string name="para2">Replay the chat anytime to discover different options or skip to read more by tapping on the settings icon in the chats.
     </string>
+    <string name="next">NEXT</string>
+    <string name="chat_icon">chat Icon</string>
+    <string name="home_image">Home Image</string>
 </resources>
