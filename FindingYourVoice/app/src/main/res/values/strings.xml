@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">FindingYourVoice</string>
-    <string name="intro">These three examples are the real life experience of  workers’. The options and decisions provided will not apply to every situation you encounter in the work place, but as you work through them, they will show you how knowledge of the correct legislation and protections can help you make choices that work best for you.
-
+    <string name="intro">When faced with dilemma at work, many different factors can change the way you choose a solution. In the next page,you will answer questions to discover options available to you.
 </string>
     <string name="finding_your_voice">Finding Your Voice</string>
     <string name="home">HOME</string>
@@ -28,4 +27,6 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="or_call_1_780_486_9009">Or call: 1-(780)-486-9009</string>
     <string name="finding_your_voicepage">Finding Your Voice</string>
     <string name="know_your_rightspage">Know Your Rights</string>
+    <string name="para2">Replay the chat anytime to discover different options or skip to read more by tapping on the settings icon in the chats.
+    </string>
 </resources>
