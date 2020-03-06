@@ -23,10 +23,11 @@
         <Button
             android:id="@+id/KYR_button"
             android:layout_width="match_parent"
-            android:layout_height="107dp"
+            android:layout_height="105dp"
             android:layout_weight="1"
             android:background="@android:color/holo_blue_dark"
             android:drawableLeft="@drawable/group_325"
+            android:drawableRight="@drawable/big_rock"
             android:text="@string/know_your_rights"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -38,6 +39,7 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:drawableLeft="@drawable/group_253"
+            android:drawableRight="@drawable/big_rock"
             android:background="@android:color/holo_blue_dark"
             android:text="@string/finding_your_voice"
             android:textColor="@android:color/white"
@@ -46,12 +48,12 @@
         <Button
             android:id="@+id/resource_button"
             android:layout_width="match_parent"
-            android:layout_height="83dp"
+            android:layout_height="105dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
             android:drawableLeft="@drawable/lady_resources"
             android:drawableRight="@drawable/big_rock"
-            android:background="@android:color/holo_blue_dark"
             android:text="@string/resources"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -59,9 +61,11 @@
         <Button
             android:id="@+id/Funders_button"
             android:layout_width="match_parent"
-            android:layout_height="94dp"
+            android:layout_height="105dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:drawableLeft="@drawable/big_rock"
+            android:drawableRight="@drawable/big_rock"
             android:background="@android:color/holo_blue_dark"
             android:text="@string/funders_disclaimers"
             android:textColor="@android:color/white"
