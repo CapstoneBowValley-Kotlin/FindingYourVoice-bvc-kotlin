@@ -84,11 +84,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="257dp"
-        android:layout_height="164dp"
-        android:layout_marginStart="93dp"
+        android:layout_width="274dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="93dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
         android:adjustViewBounds="true"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
