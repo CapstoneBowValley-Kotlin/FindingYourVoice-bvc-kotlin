@@ -6,37 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textview1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="169dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginEnd="184dp"
-        android:text="@string/please_select_from_the_following"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="186dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="186dp"
-        android:layout_marginBottom="444dp"
-        android:text="@string/menu"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
-
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="bottom"
         android:layout_marginTop="250dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,26 +23,54 @@
         <Button
             android:id="@+id/KYR_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/know_your_rights" />
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:drawableLeft="@drawable/group_325"
+            android:drawableRight="@drawable/big_rock"
+            android:text="@string/know_your_rights"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/FYV_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/finding_your_voice" />
+            android:layout_height="105dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/group_253"
+            android:drawableRight="@drawable/big_rock"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/finding_your_voice"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/resource_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/resources" />
+            android:layout_height="105dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:drawableLeft="@drawable/lady_resources"
+            android:drawableRight="@drawable/big_rock"
+            android:text="@string/resources"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/Funders_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/funders_disclaimers" />
+            android:layout_height="105dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/big_rock"
+            android:drawableRight="@drawable/big_rock"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/funders_disclaimers"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <EditText
@@ -76,15 +78,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="104dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="21dp"
         android:ems="10"
         android:hint="@string/search"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="274dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview1" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:srcCompat="@drawable/home_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
