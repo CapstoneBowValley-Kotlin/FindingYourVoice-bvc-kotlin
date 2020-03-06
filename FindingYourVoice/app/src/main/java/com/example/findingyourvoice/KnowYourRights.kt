@@ -15,7 +15,7 @@ class KnowYourRights : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_know_your_rights)
-        KYRHome_button.setOnClickListener {
+        Workplace_safety_home_imageicon.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             Log.d("Know Your Rights", "I am in Know Your Rights Activity")
             startActivity(intent)
