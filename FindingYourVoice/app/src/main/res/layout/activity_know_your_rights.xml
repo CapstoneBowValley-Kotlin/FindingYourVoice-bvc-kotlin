@@ -34,13 +34,13 @@
             android:layout_marginEnd="159dp"
             android:layout_marginBottom="10dp"
             android:contentDescription="@string/workplace_safety_image_icon"
-            app:layout_constraintBottom_toTopOf="@+id/titleKYR_textview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.633"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@android:drawable/sym_def_app_icon" />
+
 
         <TextView
             android:id="@+id/titleKYR_textview"
@@ -49,24 +49,21 @@
             android:layout_marginStart="140dp"
             android:layout_marginTop="200dp"
             android:layout_marginEnd="100dp"
-            android:layout_marginBottom="20dp"
             android:gravity="center"
             android:text="@string/workplace_safety"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/MainContent_textview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/MainContent_textview"
             android:layout_width="325dp"
             android:layout_height="201dp"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="21dp"
             android:layout_marginBottom="300dp"
             android:gravity="center"
@@ -75,8 +72,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.531"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleKYR_textview" />
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <LinearLayout
             android:layout_width="358dp"
@@ -90,29 +86,32 @@
             app:layout_constraintTop_toBottomOf="@+id/MainContent_textview"
             app:layout_constraintVertical_bias="0.586">
 
+
+
                 <Button
                     android:id="@+id/OHS_button"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:layout_width="15dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/ohs" />
 
                 <Button
                     android:id="@+id/Human_Rights_button"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:layout_width="15dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/human_rights" />
 
                 <Button
                     android:id="@+id/empStandard_button"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:layout_width="15dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/empstandard" />
+
         </LinearLayout>
 
 
