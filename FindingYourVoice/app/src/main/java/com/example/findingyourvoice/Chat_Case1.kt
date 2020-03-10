@@ -1,5 +1,6 @@
 package com.example.findingyourvoice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_chat__case1.*
 import com.example.findingyourvoice.databinding.ChatItemBinding
 import com.example.findingyourvoice.databinding.ReplyItemBinding
-import java.util.Arrays
 
 class Chat_Case1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -158,7 +158,14 @@ class Chat_Case1 : AppCompatActivity() {
             adapter =ChatAdapter(chats)
         }
 
-
+        imageButton2.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
+        imageButton.setOnClickListener {
+            val intent = Intent(this,FindingYourVoice::class.java)
+            startActivity(intent)
+        }
     }
 }
 
