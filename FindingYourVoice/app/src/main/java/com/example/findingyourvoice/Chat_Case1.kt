@@ -18,13 +18,30 @@ class Chat_Case1 : AppCompatActivity() {
         setContentView(R.layout.activity_chat__case1)
 
         val chats = arrayListOf<Chat>()
+        var p=0
         chats.add(Chat("One day, you come into work and when you arrive, your supervisor asks you to do a task you were not trained to do.",0))
+        p++
         chats.add(Chat("Do you do it?",0))
-        chats.add(Chat("Yes",1))
+        p++
+        yes_button.setOnClickListener {
+            chats.add(Chat("Yes",1))
+            recycler_view.apply {
+                adapter?.notifyItemChanged(p)
+                p++
+            }
+        }
+        no_button.setOnClickListener {
+            chats.add(Chat("No",1))
+            recycler_view.apply {
+                adapter?.notifyItemChanged(p)
+                p++
+            }
+        }
         recycler_view.apply {
             layoutManager= LinearLayoutManager(this@Chat_Case1)
             adapter =ChatAdapter(chats)
         }
+
     }
 }
 
