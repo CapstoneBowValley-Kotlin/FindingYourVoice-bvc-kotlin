@@ -37,4 +37,5 @@ Your safety at work is protected by 3 laws (pieces of legislation):
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_icon">Home Icon</string>
 </resources>
