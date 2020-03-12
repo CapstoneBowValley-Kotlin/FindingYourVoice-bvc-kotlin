@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.findingyourvoice.MainActivity
+import com.example.findingyourvoice.OHSFragment
 import com.example.findingyourvoice.R
 import kotlinx.android.synthetic.main.activity_know_your_rights.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,5 +21,9 @@ class KnowYourRights : AppCompatActivity() {
             Log.d("Know Your Rights", "I am in Know Your Rights Activity")
             startActivity(intent)
         }
+      OHS_button.setOnClickListener {
+          supportFragmentManager.beginTransaction()
+              .replace(R.id.Frame_Layout,OHSFragment()).commit()
+      }
     }
 }
