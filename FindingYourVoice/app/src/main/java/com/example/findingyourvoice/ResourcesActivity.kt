@@ -6,12 +6,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_resources2.*
+import kotlinx.android.synthetic.main.app_bar.*
 
 class ResourcesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resources2)
+
+        imageView2.setOnClickListener {
+            val intent =Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
 
         btnCall1.setOnClickListener {
             val dialog = AlertDialog.Builder(this)
