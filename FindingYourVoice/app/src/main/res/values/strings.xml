@@ -48,4 +48,16 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="workplace_safety">Workplace safety</string>
+    <string name="workplace_safety_image_icon">Workplace safety Image icon</string>
+    <string name="workplace_safety_home_icon">Workplace safety Home Icon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_icon">Home Icon</string>
+    <string name="home_icon_for_workplace_safety">Home Icon for workplace safety</string>
+    <string name="workplace_safety_icon">Workplace safety icon</string>
+    <string name="OHS_Content">Most workers in Alberta are protected under the Alberta Health and Safety Act, Regulation and Code. Some workers, such as federal workers, live in care-givers, or farm workers may have their own separate laws. These laws are the minimum standards for protecting workers, and involve both workers and employers.</string>
+    <string name="human_rights_content">In addition to workplace safety, hazards, rights, and standards, Alberta has legislation that relates to the rights of all people, regardless of background such as ethnocultural group, source of income, participation in a labour union, gender, age, sexual orientation, or immigration status:</string>
+    <string name="employment_standards_content">Workers and employers in Alberta must follow the Employment Standards Code and Employment Standards Regulation:Employment Standards apply to most workers. People who work in some fields such as live-in workers, truckers, farm workers, and firefighters have their own set of rules (https://www.alberta.ca/exceptions-for-specific-industries.aspx ). The Employment Standards Code creates Alberta’s minimum standards of employment in areas outside of health and safety that are related to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves, and termination of employment. It also establishes the steps  </string>
 </resources>
