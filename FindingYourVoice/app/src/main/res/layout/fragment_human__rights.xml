@@ -1,64 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Human_RightsFragment">
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="109dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="10dp"
-        android:src="@android:drawable/sym_def_app_icon" />
-
-    <TextView
-        android:id="@+id/HumanRights_textview"
-        android:layout_width="183dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="-50dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="100dp"
-        android:text="@string/human_rights"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/MainContent_textview"
-        android:layout_width="325dp"
-        android:layout_height="152dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="255dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:text="@string/maincontent"
-        android:textSize="20sp" />
-
-    <TextView
-    android:id="@+id/maincontent3_textview"
-    android:layout_width="325dp"
-    android:layout_height="130dp"
-    android:layout_marginStart="50dp"
-    android:layout_marginTop="450dp"
-    android:layout_marginBottom="65dp"
-    android:gravity="center"
-    android:text="@string/maincontent3"
-    android:textSize="15sp"></TextView>
-
-    <TextView
-        android:layout_width="325dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="600dp"
-        android:layout_marginBottom="0dp"
-        android:gravity="center"
-        android:text="@string/maincontent4"></TextView>
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/Human_Rights_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/Human_Rights_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/human_rights_content"
+            android:textSize="18sp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

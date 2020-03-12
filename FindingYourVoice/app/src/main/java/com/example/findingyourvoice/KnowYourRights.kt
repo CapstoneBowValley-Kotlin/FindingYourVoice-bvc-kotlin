@@ -14,46 +14,22 @@ class KnowYourRights : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_know_your_rights)
-        Workplace_safety_home_imageicon.setOnClickListener {
+        Workplace_safety_Home_imageView.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             Log.d("Know Your Rights", "I am in Know Your Rights Activity")
             startActivity(intent)
         }
-
-
-        loadOHS(OHSFragment())
-        OHS_button.setOnClickListener {
-            loadOHS(OHSFragment())
-        }
-
+      OHS_button.setOnClickListener {
+          supportFragmentManager.beginTransaction()
+              .replace(R.id.Frame_Layout,OHSFragment()).commit()
+      }
         Human_Rights_button.setOnClickListener {
-            loadHuman_Rights(Human_RightsFragment())
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.Frame_Layout,Human_RightsFragment()).commit()
         }
-
         empStandard_button.setOnClickListener {
-            loadEmployment_Standards(Employment_StandardsFragment())
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.Frame_Layout,Employment_StandardsFragment()).commit()
         }
-
-
-    }
-
-    private fun loadOHS(ohsFragment: OHSFragment) {
-        val ft = supportFragmentManager.beginTransaction()
-        ft.replace(R.id.fragment_oh, ohsFragment)
-        ft.commit()
-
-    }
-
-    private fun loadHuman_Rights(humanrightsFragment: Human_RightsFragment) {
-        val ft = supportFragmentManager.beginTransaction()
-        ft.replace(R.id.Human_RightsFragment, humanrightsFragment)
-        ft.commit()
-
-    }
-
-    private fun loadEmployment_Standards(employmentStandardsfragment: Employment_StandardsFragment) {
-        val ft = supportFragmentManager.beginTransaction()
-        ft.replace(R.id.Employment_StandardsFragment, employmentStandardsfragment)
-        ft.commit()
     }
 }

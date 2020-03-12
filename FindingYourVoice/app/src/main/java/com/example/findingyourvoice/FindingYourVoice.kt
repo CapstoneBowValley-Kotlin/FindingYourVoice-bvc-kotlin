@@ -13,7 +13,7 @@ class FindingYourVoice : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finding_your_voice)
         val intent = Intent(this,MainActivity::class.java)
-        Home_imageView.setOnClickListener {
+        Home_ImageView.setOnClickListener {
             startActivity(intent)
         }
         Next_button.setOnClickListener {

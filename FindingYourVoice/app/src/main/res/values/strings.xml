@@ -45,4 +45,28 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="maincontent6">Employment Standards apply to all workers with a number of exemptions, such as live-in-workers, truckers, farm workers and firefighters. The Employment Standards Code establsihes Albertas minimum standards of employment in areas outside of health and safety that are relevant to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves and termination of employment. It also establsihes the processes in cases where employment standards have not been met, such as wrongful termination of employment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_icon">Home Icon</string>
+    <string name="home_icon_for_workplace_safety">Home Icon for workplace safety</string>
+    <string name="workplace_safety_icon">Workplace safety icon</string>
+    <string name="OHS_Content">Most workers in Alberta are protected under the Alberta Health and Safety Act, Regulation and Code. Some workers, such as federal workers, live in care-givers, or farm workers may have their own separate laws. These laws are the minimum standards for protecting workers, and involve both workers and employers.
+In Alberta, workers have 4 basic rights that relate to health safety (information from Alberta Workers Health Centre https://workershealthcentre.ca/4-health-and-safety-rights/):\n\n
+1.	Right to Know about the dangers of our jobs and how we are protected\n
+2.	Right to Participate in activities affecting our Health and Safety\n
+3.	Right to Refuse work that may be dangerous to ourselves or others\n
+4.	Right to Be Free from Reprisal (disciplined or fired) for using our Health and Safety rights\n\n
+As workers, we must follow the health and safety rules. We must not cause or participate in harassment, bullying, or violence, and we must report unsafe work conditions. This is part of Canadian law.  It is not always easy to do so, but if we do not follow these rules there can be serious consequences (such as undocumented injuries, or workplaces that remain unsafe).\n\n
+        There are 4 hazards that relate to workplace health and safety.\n
+A Common way to identify hazards is by category:\n
+        <b>Hazard Definitions</b>\n
+        •	biological – bacteria, viruses, insects, plants, birds, animals, and humans, etc.,\n
+•	chemical – depends on the physical, chemical and toxic properties of the chemical,\n
+•	ergonomic – repetitive movements, improper set up of workstation, etc., \n
+•	physical – radiation, magnetic fields, temperature extremes, pressure extremes (high pressure or vacuum), noise, etc., \n
+•	psychosocial – stress, violence, etc., \n
+•	safety – slipping/tripping hazards, inappropriate machine guarding, equipment malfunctions or breakdowns.
+
+
+.</string>
+    <string name="human_rights_content">In addition to workplace safety, hazards, rights, and standards, Alberta has legislation that relates to the rights of all people, regardless of background such as ethnocultural group, source of income, participation in a labour union, gender, age, sexual orientation, or immigration status:</string>
+    <string name="employment_standards_content">Workers and employers in Alberta must follow the Employment Standards Code and Employment Standards Regulation:Employment Standards apply to most workers. People who work in some fields such as live-in workers, truckers, farm workers, and firefighters have their own set of rules (https://www.alberta.ca/exceptions-for-specific-industries.aspx ). The Employment Standards Code creates Alberta’s minimum standards of employment in areas outside of health and safety that are related to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves, and termination of employment. It also establishes the steps  </string>
 </resources>
