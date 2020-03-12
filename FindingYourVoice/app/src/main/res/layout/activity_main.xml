@@ -65,9 +65,9 @@
             android:layout_height="105dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
             android:drawableLeft="@drawable/big_rock"
             android:drawableRight="@drawable/big_rock"
-            android:background="@android:color/holo_blue_dark"
             android:text="@string/funders_disclaimers"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -104,5 +104,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
         app:srcCompat="@drawable/home_logo" />
+
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
