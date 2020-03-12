@@ -42,4 +42,5 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="workplace_safety_icon">Workplace safety icon</string>
     <string name="OHS_Content">Most workers in Alberta are protected under the Alberta Health and Safety Act, Regulation and Code. Some workers, such as federal workers, live in care-givers, or farm workers may have their own separate laws. These laws are the minimum standards for protecting workers, and involve both workers and employers.</string>
     <string name="human_rights_content">In addition to workplace safety, hazards, rights, and standards, Alberta has legislation that relates to the rights of all people, regardless of background such as ethnocultural group, source of income, participation in a labour union, gender, age, sexual orientation, or immigration status:</string>
+    <string name="employment_standards_content">Workers and employers in Alberta must follow the Employment Standards Code and Employment Standards Regulation: </string>
 </resources>

@@ -5,10 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.findingyourvoice.Human_RightsFragment
-import com.example.findingyourvoice.MainActivity
-import com.example.findingyourvoice.OHSFragment
-import com.example.findingyourvoice.R
+import com.example.findingyourvoice.*
 import kotlinx.android.synthetic.main.activity_know_your_rights.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -29,6 +26,10 @@ class KnowYourRights : AppCompatActivity() {
         Human_Rights_button.setOnClickListener {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.Frame_Layout,Human_RightsFragment()).commit()
+        }
+        empStandard_button.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.Frame_Layout,Employment_StandardsFragment()).commit()
         }
     }
 }

@@ -28,7 +28,7 @@
         android:id="@+id/workplacesafety_icon_imageview"
         android:layout_width="111dp"
         android:layout_height="71dp"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="8dp"
