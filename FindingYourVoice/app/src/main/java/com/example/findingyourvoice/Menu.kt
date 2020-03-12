@@ -1,6 +1,7 @@
 package com.example.findingyourvoice
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import androidx.navigation.findNavController
@@ -21,6 +22,7 @@ class Menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
+        
         val myIntent1 = Intent(this, MainActivity::class.java)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -58,6 +60,7 @@ class Menu : AppCompatActivity() {
             else -> return super.onOptionsItemSelected(item)
         }
     }
+
     fun onNavigationItemsSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.nav_workplace_safety -> {
@@ -128,4 +131,5 @@ class Menu : AppCompatActivity() {
         fm.replace(R.id.nav_host_fragment, frag8)
         fm.commit()
     }
+
 }

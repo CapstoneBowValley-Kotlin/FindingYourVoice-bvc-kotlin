@@ -12,10 +12,10 @@ class FindingYourVoice : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finding_your_voice)
-        val intentMenu = Intent(this,Menu::class.java)
+      /*  val intentMenu = Intent(this,Menu::class.java)
         Home_imageView.setOnClickListener {
             startActivity(intentMenu)
-        }
+        }*/
         val intentChatCase1 = Intent(this,Chat_Case1::class.java)
         Next_button.setOnClickListener {
         startActivity(intentChatCase1)
