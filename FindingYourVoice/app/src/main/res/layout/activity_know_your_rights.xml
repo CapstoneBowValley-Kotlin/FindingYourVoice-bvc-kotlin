@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".KnowYourRights">
+    android:layout_height="match_parent">
+<!--    tools:context=".KnowYourRights"-->
 
     <TextView
         android:id="@+id/titleKYR_textview"
@@ -46,11 +46,10 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="400dp"
         android:gravity="center"
         android:text="@string/maincontent"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/LinearLayoutKYR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,28 +61,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="305dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:id="@+id/OHS_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="109dp"
+            android:layout_height="95dp"
             android:text="@string/ohs" />
 
         <Button
             android:id="@+id/EmpStandard_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="166dp"
+            android:layout_height="97dp"
             android:text="@string/empstandard" />
 
         <Button
             android:id="@+id/HumanRights_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
             android:text="@string/human_rights" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
