@@ -47,4 +47,8 @@ class ResourcesActivity : AppCompatActivity() {
         }
     }
 
+    private fun setupPermission() {
+
+    }
+
 }
