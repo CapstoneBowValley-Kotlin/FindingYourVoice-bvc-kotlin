@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".NavigatingTheSystem"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/Chat" />
+                app:srcCompat="@drawable/chat" />
 
             <TextView
                 android:id="@+id/textView_chat1"
@@ -75,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="80dp"
+                android:clickable="false"
                 android:text="Injury Prevention and Training"
                 android:textSize="20sp" />
 
@@ -85,6 +86,7 @@
                 android:layout_below="@+id/textView_chat1"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="22dp"
+                android:clickable="false"
                 android:text="Enter chat to learn more!"
                 android:textSize="18sp" />
 
@@ -111,7 +113,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/Chat" />
+                app:srcCompat="@drawable/chat" />
 
             <TextView
                 android:id="@+id/textView_chat2"
@@ -155,7 +157,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/Chat" />
+                app:srcCompat="@drawable/chat" />
 
             <TextView
                 android:id="@+id/textView_chat3"
@@ -200,7 +202,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/Chat" />
+                app:srcCompat="@drawable/chat" />
 
             <TextView
                 android:id="@+id/textView_chat4"
@@ -244,7 +246,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/Chat" />
+                app:srcCompat="@drawable/chat" />
 
             <TextView
                 android:id="@+id/textView_chat5"
