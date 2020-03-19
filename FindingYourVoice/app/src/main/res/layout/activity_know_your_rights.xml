@@ -78,8 +78,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="347dp"
-        android:layout_height="67dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="5dp"
         android:orientation="horizontal"
@@ -93,30 +93,35 @@
         <Button
             android:id="@+id/OHS_button"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="115dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+
             android:layout_weight="1"
             android:text="@string/ohs"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/Human_Rights_button"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:freezesText="true"
             android:layout_weight="1"
+            android:textSize="15dp"
             android:text="@string/human_rights"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/empStandard_button"
+            android:textAlignment="gravity"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/empstandard"
-            android:textSize="18sp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 
