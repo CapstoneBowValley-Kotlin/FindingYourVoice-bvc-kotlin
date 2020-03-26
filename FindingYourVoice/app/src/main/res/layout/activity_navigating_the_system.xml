@@ -67,7 +67,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/chat" />
+                app:srcCompat="@drawable/chat_img" />
 
             <TextView
                 android:id="@+id/textView_chat1"
@@ -113,7 +113,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/chat" />
+                app:srcCompat="@drawable/chat_img" />
 
             <TextView
                 android:id="@+id/textView_chat2"
@@ -157,7 +157,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/chat" />
+                app:srcCompat="@drawable/chat_img" />
 
             <TextView
                 android:id="@+id/textView_chat3"
@@ -202,7 +202,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/chat" />
+                app:srcCompat="@drawable/chat_img" />
 
             <TextView
                 android:id="@+id/textView_chat4"
@@ -246,7 +246,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
 
-                app:srcCompat="@drawable/chat" />
+                app:srcCompat="@drawable/chat_img" />
 
             <TextView
                 android:id="@+id/textView_chat5"
