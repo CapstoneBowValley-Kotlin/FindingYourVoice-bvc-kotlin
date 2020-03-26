@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_workplace_safety"
+            android:icon="@drawable/group204"
+            android:title="Workplace Safety"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_human_rights"
+            android:icon="@drawable/group202"
+            android:title="Human Rights" />
+        <item
+            android:id="@+id/nav_employment_standards"
+            android:icon="@drawable/group206"
+            android:title="Employment Standards" />
+        <item
+            android:id="@+id/nav_occupational_health_and_safety"
+            android:icon="@drawable/group209"
+            android:title="Occupational Health and Safety" />
+        <item
+            android:id="@+id/nav_finding_your_voice"
+            android:icon="@drawable/ic_action_name"
+            android:title="Finding Your Voice" />
+        <item
+            android:id="@+id/nav_resources"
+            android:icon="@drawable/phone_icon"
+            android:title="Resources" />
+        <item
+            android:id="@+id/nav_disclaimer"
+            android:icon="@drawable/group209"
+            android:title="Disclaimer" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Settings" />
+
+
+    </group>
+
+
+</menu>

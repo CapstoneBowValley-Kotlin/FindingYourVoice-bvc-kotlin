@@ -4,8 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_finding_your_voice.*
-import kotlinx.android.synthetic.main.activity_resources.*
-import kotlinx.android.synthetic.main.activity_resources.KYRHome_button
+
 
 class FindingYourVoice : AppCompatActivity() {
 
@@ -16,8 +15,9 @@ class FindingYourVoice : AppCompatActivity() {
         Home_ImageView.setOnClickListener {
             startActivity(intent)
         }
+        val intentChatCase1 = Intent(this,Chat_Case1::class.java)
         Next_button.setOnClickListener {
-
+            startActivity(intentChatCase1)
         }
     }
 }
