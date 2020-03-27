@@ -29,7 +29,7 @@
         android:layout_width="111dp"
         android:layout_height="71dp"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/workplace_safety_icon"
@@ -62,14 +62,17 @@
 
     <TextView
         android:id="@+id/MainContent_textview"
-        android:layout_width="296dp"
-        android:layout_height="162dp"
-        android:layout_marginStart="57dp"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="58dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:background="#D3D3D3"
+        android:drawableLeft="@drawable/group_325"
         android:gravity="center"
         android:text="@string/maincontent"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,35 +96,36 @@
         <Button
             android:id="@+id/OHS_button"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
             android:text="@string/ohs"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/Human_Rights_button"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:foregroundGravity="center"
             android:freezesText="true"
-            android:layout_weight="1"
-            android:textSize="15dp"
             android:text="@string/human_rights"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/empStandard_button"
-            android:textAlignment="gravity"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:text="@string/empstandard"
-            android:textSize="15sp" />
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
