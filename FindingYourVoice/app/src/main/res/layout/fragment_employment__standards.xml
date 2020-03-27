@@ -11,12 +11,12 @@
         android:layout_height="match_parent">
 
 
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/employment_standards_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:textSize="18sp"
+            android:text="@string/employment_standards_content" />
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

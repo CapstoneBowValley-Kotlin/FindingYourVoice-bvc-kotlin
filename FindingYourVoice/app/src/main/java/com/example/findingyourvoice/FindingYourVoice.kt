@@ -15,9 +15,9 @@ class FindingYourVoice : AppCompatActivity() {
         Home_ImageView.setOnClickListener {
             startActivity(intent)
         }
-        val intentChatCase1 = Intent(this,Chat_Case1::class.java)
+        val navSys = Intent(this,NavigatingTheSystem::class.java)
         Next_button.setOnClickListener {
-            startActivity(intentChatCase1)
+            startActivity(navSys)
         }
     }
 }
