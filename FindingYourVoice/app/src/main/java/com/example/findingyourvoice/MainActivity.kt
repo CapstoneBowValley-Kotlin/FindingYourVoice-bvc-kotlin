@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         // Log.d: Send a DEBUG log message and log the exception.
         resource_button.setOnClickListener {
             Log.d("MENU", "Button is clicked")
-            startActivity(myIntent)
+            startActivity(Intent(this, ParentActivity::class.java))
         }
         FYV_button.setOnClickListener {
             val intent =Intent(this,FindingYourVoice::class.java)
