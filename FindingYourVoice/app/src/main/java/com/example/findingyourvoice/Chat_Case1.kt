@@ -163,7 +163,7 @@ class Chat_Case1 : AppCompatActivity() {
             startActivity(intent)
         }
         imageButton.setOnClickListener {
-            val intent = Intent(this,FindingYourVoice::class.java)
+            val intent = Intent(this,NavigatingTheSystem::class.java)
             startActivity(intent)
         }
     }
