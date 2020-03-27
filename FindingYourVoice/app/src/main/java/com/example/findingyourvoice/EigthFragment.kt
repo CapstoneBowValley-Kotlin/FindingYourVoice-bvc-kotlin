@@ -14,6 +14,6 @@ class EigthFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return LayoutInflater.from(container?.context).inflate(R.layout.settings,container,false)
-    }
+    }   
 
 }
