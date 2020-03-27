@@ -13,12 +13,14 @@
 
 
         android:id="@+id/OHS_Content_scrollview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
 
         <TextView
@@ -27,13 +29,57 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="579dp"
             android:gravity="center"
+            android:justificationMode="inter_word"
             android:text="@string/OHS_Content"
             android:textSize="18sp"
-            android:justificationMode="inter_word"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </ScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="392dp"
+        android:drawableLeft="@drawable/btn_link"
+        android:foregroundGravity="fill"
+        android:text="Current legislation"
+        app:layout_constraintBottom_toBottomOf="@+id/OHS_Content_scrollview"
+        app:layout_constraintEnd_toEndOf="@+id/OHS_Content_scrollview"
+        app:layout_constraintStart_toStartOf="@+id/OHS_Content_scrollview"
+        app:layout_constraintTop_toTopOf="@+id/OHS_Content_scrollview" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="283dp"
+        android:background="@android:color/background_light"
+        android:text="Basic Rights"
+        app:layout_constraintBottom_toBottomOf="@+id/OHS_Content_scrollview"
+        app:layout_constraintStart_toStartOf="@+id/OHS_Content_scrollview"
+        app:layout_constraintTop_toTopOf="@+id/OHS_Content_scrollview" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="397dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="287dp"
+        android:background="@android:color/background_light"
+        android:text="Types of Hazards"
+        app:layout_constraintBottom_toBottomOf="@+id/OHS_Content_scrollview"
+        app:layout_constraintEnd_toEndOf="@+id/OHS_Content_scrollview"
+        app:layout_constraintStart_toStartOf="@+id/OHS_Content_scrollview"
+        app:layout_constraintTop_toTopOf="@+id/OHS_Content_scrollview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
