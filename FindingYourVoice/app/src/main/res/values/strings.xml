@@ -9,7 +9,7 @@
     <string name="menu">MENU</string>
     <string name="please_select_from_the_following">Please select from the following...</string>
     <string name="search">Search...</string>
-    <string name="know_your_rights">Know Your Rights</string>
+    <string name="know_your_rights">Work Place Safety</string>
     <string name="maincontent">A safe workplace takes your physical, mental, and emotional safety into consideration.
 Your safety at work is protected by 3 laws (pieces of legislation):
 </string>
@@ -48,4 +48,24 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="workplace_safety">Workplace safety</string>
+    <string name="workplace_safety_image_icon">Workplace safety Image icon</string>
+    <string name="workplace_safety_home_icon">Workplace safety Home Icon</string>
+
+    <string name="Occupational_Health_and_Safety">Occupational Health and Safety</string>
+    <string name="maincontent2">Most workers in Alberta are covered under the Alberta Health and Safety Act, Regulation and Code. Some workers such as federal workers, live in care-givers, or farm workers may have their own separate legislation
+    </string>
+    <string name="maincontent3">In addition to workplace safety, hazards, rights and standards, Alberta has legislation that relates to the rights of all people and their dignity, regardless of backgrounds such as ethnocultural group, source of income, participation in a labour union, gender, age, sexual orientation, or immigration status.</string>
+    <string name="maincontent4">Human Rights in Alberta relate to the idea that everyone should be free from discrimination, and apply to employers and workers. Employers cannto sign away their employees human rights. In cases of human rights breaches, specific steps need to be taken. You may read these steps by tapping the button below.</string>
+    <string name="Empstandards">Employment Standards</string>
+    <string name="maincontent5">Workers and employers in Alberta are subject to the Employment Standards Code and Employment Standrads Regulation</string>
+    <string name="maincontent6">Employment Standards apply to all workers with a number of exemptions, such as live-in-workers, truckers, farm workers and firefighters. The Employment Standards Code establsihes Albertas minimum standards of employment in areas outside of health and safety that are relevant to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves and termination of employment. It also establsihes the processes in cases where employment standards have not been met, such as wrongful termination of employment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_icon">Home Icon</string>
+    <string name="home_icon_for_workplace_safety">Home Icon for workplace safety</string>
+    <string name="workplace_safety_icon">Workplace safety icon</string>
+    <string name="OHS_Content">Most workers in Alberta are protected under the Alberta Health and Safety Act, Regulation and Code. Some workers, such as federal workers, live in care-givers, or farm workers may have their own separate legalisation.\n\n These laws are the minimum standards for protecting workers, and involve both workers and employers.</string>
+    <string name="human_rights_content">In addition to workplace safety, hazards, rights, and standards, Alberta has legislation that relates to the rights of all people, regardless of background such as ethnocultural group, source of income, participation in a labour union, gender, age, sexual orientation, or immigration status.</string>
+    <string name="employment_standards_content">Workers and employers in Alberta must follow the Employment Standards Code and Employment Standards Regulation\n\n </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
