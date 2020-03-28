@@ -2,12 +2,14 @@ package com.example.knowyourrights
 
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.findingyourvoice.*
 import kotlinx.android.synthetic.main.activity_know_your_rights.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_oh.*
 
 class KnowYourRights : AppCompatActivity() {
 
@@ -31,5 +33,6 @@ class KnowYourRights : AppCompatActivity() {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.Frame_Layout,Employment_StandardsFragment()).commit()
         }
+
     }
 }

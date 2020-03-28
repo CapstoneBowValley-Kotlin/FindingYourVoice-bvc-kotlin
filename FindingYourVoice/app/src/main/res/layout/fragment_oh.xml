@@ -9,31 +9,47 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ScrollView
 
-
-        android:id="@+id/OHS_Content_scrollview"
+    <TextView
+        android:id="@+id/OHS_Content_textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/OHS_Content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_link_current_legislation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_link_current_legislation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="180dp"
+        android:contentDescription="@string/current_legislation"
+        android:src="@drawable/btn_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OHS_Content_textView" />
+
+    <Button
+        android:id="@+id/KYR_OHS_button"
+        android:layout_width="263dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="243dp"
+        android:text="@string/finding_your_voice"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/imageView_link_current_legislation" />
 
-
-        <TextView
-            android:id="@+id/OHS_Content_textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="579dp"
-            android:gravity="center"
-            android:text="@string/OHS_Content"
-            android:textSize="18sp"
-            android:justificationMode="inter_word"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
