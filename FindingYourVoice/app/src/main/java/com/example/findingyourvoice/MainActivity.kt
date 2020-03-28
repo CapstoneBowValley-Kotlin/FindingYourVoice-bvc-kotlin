@@ -45,7 +45,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         Funders_button.setOnClickListener {
-            val intent =Intent(this, Disclaimers::class.java)
+            val intent = Intent(this, ParentActivity::class.java)
+            intent.putExtra("type", "disclaimer")
             startActivity(intent)
         }
     }
