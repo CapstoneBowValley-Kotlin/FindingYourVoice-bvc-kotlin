@@ -48,7 +48,6 @@
         android:layout_marginBottom="392dp"
         android:drawableLeft="@drawable/btn_link"
         android:foregroundGravity="fill"
-        android:text="Current legislation"
         app:layout_constraintBottom_toBottomOf="@+id/OHS_Content_scrollview"
         app:layout_constraintEnd_toEndOf="@+id/OHS_Content_scrollview"
         app:layout_constraintStart_toStartOf="@+id/OHS_Content_scrollview"

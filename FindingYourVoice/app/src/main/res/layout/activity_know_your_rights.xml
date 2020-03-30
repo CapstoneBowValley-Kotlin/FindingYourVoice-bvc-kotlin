@@ -26,12 +26,13 @@
 
     <ImageView
         android:id="@+id/workplacesafety_icon_imageview"
-        android:layout_width="111dp"
-        android:layout_height="71dp"
+        android:layout_width="125dp"
+        android:layout_height="85dp"
         android:layout_marginStart="160dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="8dp"
+        android:foregroundGravity="center"
         android:contentDescription="@string/workplace_safety_icon"
         app:layout_constraintBottom_toTopOf="@+id/titleKYR_textview"
         app:layout_constraintEnd_toStartOf="@+id/Workplace_safety_Home_imageView"
@@ -48,6 +49,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="120dp"
         android:layout_marginBottom="10dp"
+        android:foregroundGravity="center"
         android:gravity="center"
         android:text="@string/workplace_safety"
         android:textColor="@android:color/background_dark"
@@ -55,7 +57,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/MainContent_textview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/workplacesafety_icon_imageview"
         app:layout_constraintVertical_bias="0.0" />
@@ -63,12 +65,12 @@
     <TextView
         android:id="@+id/MainContent_textview"
         android:layout_width="wrap_content"
-        android:layout_height="162dp"
+        android:layout_height="230dp"
         android:layout_marginStart="57dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="58dp"
         android:layout_marginBottom="20dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="?attr/colorButtonNormal"
         android:drawableLeft="@drawable/group_325"
         android:gravity="center"
         android:text="@string/maincontent"
@@ -95,35 +97,43 @@
         <Button
             android:id="@+id/OHS_button"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_weight="1"
+            android:background="@drawable/ohs_button"
             android:text="@string/ohs"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textColor="#39c67a"
+            android:inputType="textImeMultiLine"
+            android:textSize="15sp"/>
 
         <Button
             android:id="@+id/Human_Rights_button"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ohs_button"
             android:foregroundGravity="center"
             android:freezesText="true"
-            android:layout_weight="1"
-            android:textSize="15dp"
+            android:inputType="textImeMultiLine"
+            android:layout_marginLeft="10dp"
             android:text="@string/human_rights"
-            android:textStyle="bold" />
+            android:textColor="#39c67a"
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/empStandard_button"
-            android:textAlignment="gravity"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/ohs_button"
+            android:freezesText="true"
+            android:inputType="textImeMultiLine"
+            android:layout_marginLeft="10dp"
             android:text="@string/empstandard"
-            android:textSize="15sp" />
+            android:textAlignment="gravity"
+            android:textSize="15sp"
+            android:textColor="#39c67a"/>
 
     </LinearLayout>
 
