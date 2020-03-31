@@ -3,140 +3,158 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
     <!--    tools:context=".KnowYourRights"-->
 
 
-    <ImageView
-        android:id="@+id/Workplace_safety_Home_imageView"
-        android:layout_width="53dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="110dp"
-        android:contentDescription="@string/home_icon_for_workplace_safety"
-        app:layout_constraintBottom_toTopOf="@+id/titleKYR_textview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185"
-        app:srcCompat="@drawable/home" />
 
-    <ImageView
-        android:id="@+id/workplacesafety_icon_imageview"
-        android:layout_width="111dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/workplace_safety_icon"
-        app:layout_constraintBottom_toTopOf="@+id/titleKYR_textview"
-        app:layout_constraintEnd_toStartOf="@+id/Workplace_safety_Home_imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/workplace_safety_icon" />
 
-    <TextView
-        android:id="@+id/titleKYR_textview"
-        android:layout_width="126dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:text="@string/workplace_safety"
-        android:textColor="@android:color/background_dark"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/MainContent_textview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/workplacesafety_icon_imageview"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/MainContent_textview"
-        android:layout_width="296dp"
-        android:layout_height="162dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="@string/maincontent"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleKYR_textview" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="5dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/Frame_Layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainContent_textview"
-        app:layout_constraintVertical_bias="0.586">
-
-        <Button
-            android:id="@+id/OHS_button"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="1"
-            android:text="@string/ohs"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/Human_Rights_button"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:freezesText="true"
-            android:layout_weight="1"
-            android:textSize="15dp"
-            android:text="@string/human_rights"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/empStandard_button"
-            android:textAlignment="gravity"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/empstandard"
-            android:textSize="15sp" />
-
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/Frame_Layout"
-        android:layout_width="387dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="15dp"
-        android:layout_weight="1"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="parent">
 
-    </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/Workplace_safety_Home_imageView"
+                android:layout_width="50dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="350dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/home_icon_for_workplace_safety"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.185"
+                app:srcCompat="@drawable/home" />
 
+            <ImageView
+                android:id="@+id/workplacesafety_icon_imageview"
+                android:layout_width="111dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/workplace_safety_icon"
+                app:layout_constraintBottom_toTopOf="@+id/titleKYR_textview"
+                app:layout_constraintEnd_toStartOf="@+id/Workplace_safety_Home_imageView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/workplace_safety_icon" />
+
+            <TextView
+                android:id="@+id/titleKYR_textview"
+                android:layout_width="126dp"
+                android:layout_height="78dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="120dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/workplace_safety"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/MainContent_textview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/workplacesafety_icon_imageview"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/MainContent_textview"
+                android:layout_width="364dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#D3D3D3"
+                android:drawableLeft="@drawable/group_325"
+                android:gravity="center"
+                android:text="@string/maincontent"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleKYR_textview" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/Frame_Layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MainContent_textview"
+                app:layout_constraintVertical_bias="0.586">
+
+                <Button
+                    android:id="@+id/OHS_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="@string/ohs"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/Human_Rights_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center"
+                    android:freezesText="true"
+                    android:text="@string/human_rights"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/empStandard_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="@string/empstandard"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/Frame_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -68,5 +68,15 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="OHS_Content">Most workers in Alberta are protected under the Alberta Health and Safety Act, Regulation and Code. Some workers, such as federal workers, live in care-givers, or farm workers may have their own separate legalisation.\n\n These laws are the minimum standards for protecting workers, and involve both workers and employers.</string>
     <string name="human_rights_content">In addition to workplace safety, hazards, rights, and standards, Alberta has legislation that relates to the rights of all people, regardless of background such as ethnocultural group, source of income, participation in a labour union, gender, age, sexual orientation, or immigration status.</string>
     <string name="employment_standards_content">Workers and employers in Alberta must follow the Employment Standards Code and Employment Standards Regulation\n\n </string>
-    
+    <string name="current_legislation">Current Legislation</string>
+    <string name="icon">Icon</string>
+    <string name="human_rights_content1">Human Rights in Alberta relate to the idea that everyone should be free from discrimination, and apply to employers and workers. Employers cannot sign away their employees human rights. In cases of human rights breaches ,specific steps need to be taken. You may read these steps by tapping the buttons below:</string>
+    <string name="ab_human_right_act">AB Human Right Act</string>
+    <string name="a_guide_for_complaints">A Guide For Complaints</string>
+    <string name="ab_employment_standard_code">AB Employment Standard Code</string>
+    <string name="ab_employment_standard_regulations">AB Employment Standard Regulations</string>
+    <string name="human_rights_content2">Employment Standards apply to all the workers with a number of exemptions,such as live- workers, truckers,farm workers and firefighters. </string>
+
+    <string name="emp_std_content3">The Employment Standards Code creates Alberta’s minimum standards of employment in areas outside of health and safety that are related to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves, and termination of employment. It also establishes the steps tp follow  in cases where employment standards have not been met, such as wrongful termination of employment.</string>
+    <string name="ab_employment_standard_rules">AB Employment Standard Rules</string>
 </resources>
