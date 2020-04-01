@@ -40,6 +40,6 @@ class MainActivity : AppCompatActivity() {
             val intent =Intent(this, KnowYourRights::class.java)
             startActivity(intent)
         }
-        
+
     }
 }

@@ -21,20 +21,6 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/FYV_button"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
-            android:background="#008B8B"
-            android:drawableStart="@drawable/group_253"
-            android:drawableEnd="@drawable/big_rock"
-            android:text="@string/finding_your_voice"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <Button
             android:id="@+id/KYR_button"
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -58,6 +44,20 @@
             android:drawableStart="@drawable/lady_resources"
             android:drawableEnd="@drawable/big_rock"
             android:text="@string/resources"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/FYV_button"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#008B8B"
+            android:drawableStart="@drawable/group_253"
+            android:drawableEnd="@drawable/big_rock"
+            android:text="@string/finding_your_voice"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
