@@ -40,5 +40,9 @@ class MainActivity : AppCompatActivity() {
             val intent =Intent(this, KnowYourRights::class.java)
             startActivity(intent)
         }
+        Funders_button.setOnClickListener {
+            val intent =Intent(this, Disclaimers::class.java)
+            startActivity(intent)
+        }
     }
 }
