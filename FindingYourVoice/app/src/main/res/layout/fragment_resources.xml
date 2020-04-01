@@ -32,7 +32,7 @@
             android:layout_marginEnd="24dp"
             android:gravity="center"
             android:text="Resources "
-            android:textColor="#000"
+            android:textColor="#3C3C3C"
             android:textSize="26sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -76,6 +76,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="24dp"
             android:gravity="center"
+            android:textColor="#3C3C3C"
             android:text="Alberta Workers Health Centre: "
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -90,6 +91,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
             android:gravity="center"
+            android:textColor="#3C3C3C"
             android:text="Calgary Workers Resource Centre: "
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -166,5 +168,82 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnCall2" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="48dp"
+            android:background="#129C96"
+            android:id="@+id/sponsorDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Sponsors"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#3C3C3C"
+            android:id="@+id/sponsorTitle"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sponsorDivider"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/sponsorContainer1"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sponsorTitle"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/s1"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/s2"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/sponsorContainer2"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sponsorContainer1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/s3"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/s4"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/s5"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
