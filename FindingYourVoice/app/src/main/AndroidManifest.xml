@@ -17,6 +17,7 @@
             android:label=".Menu"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".ResourcesActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ParentActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Popup_Disclaimer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
