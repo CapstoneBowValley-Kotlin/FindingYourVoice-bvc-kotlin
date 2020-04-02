@@ -3,13 +3,16 @@ package com.example.findingyourvoice.fragments
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
+import com.example.findingyourvoice.MainActivity
 
 import com.example.findingyourvoice.R
+import kotlinx.android.synthetic.main.app_bar.*
 import kotlinx.android.synthetic.main.fragment_resources.*
 
 class ResourcesFragment : Fragment() {
@@ -24,6 +27,8 @@ class ResourcesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
 
         btnCall1.setOnClickListener {
             val dialog = AlertDialog.Builder(activity!!)
@@ -57,5 +62,6 @@ class ResourcesFragment : Fragment() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.helpwrc.org/"))
             startActivity(intent)
         }
+
     }
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_resources.*
+import kotlinx.android.synthetic.main.app_bar.*
 
 class Resources : AppCompatActivity() {
 
@@ -21,6 +22,12 @@ class Resources : AppCompatActivity() {
             Log.d("MAINACTIVITY", "Button is clicked")
 
             startActivity(myIntent)
+
+            FYR_Home_ImageView.setOnClickListener {
+                val intent = Intent(this,MainActivity::class.java)
+                Log.d("Meenu","Home button")
+                startActivity(intent)
+            }
         }
     }
 }
