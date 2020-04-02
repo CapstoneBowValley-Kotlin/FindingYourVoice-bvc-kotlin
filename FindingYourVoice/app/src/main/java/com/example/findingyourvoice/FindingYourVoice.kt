@@ -3,6 +3,7 @@ package com.example.findingyourvoice
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_finding_your_voice.*
 
 
@@ -13,11 +14,15 @@ class FindingYourVoice : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_finding_your_voice)
-        val intent = Intent(this,MainActivity::class.java)
-        Home_ImageView.setOnClickListener {
+        FYR_Home_ImageView.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            Log.d("Meenu","Home button")
             startActivity(intent)
         }
+
+
         val navSys = Intent(this,NavigatingTheSystem::class.java)
       /*  val intentMenu = Intent(this,Menu::class.java)
         Home_imageView.setOnClickListener {
