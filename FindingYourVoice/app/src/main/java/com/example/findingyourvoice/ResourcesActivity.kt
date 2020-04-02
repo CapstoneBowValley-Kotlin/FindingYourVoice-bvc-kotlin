@@ -14,7 +14,7 @@ class ResourcesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resources2)
 
-        imageView2.setOnClickListener {
+        btnHome.setOnClickListener {
             val intent =Intent(this,MainActivity::class.java)
             startActivity(intent)
         }

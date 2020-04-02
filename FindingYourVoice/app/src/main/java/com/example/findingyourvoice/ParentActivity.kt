@@ -1,5 +1,6 @@
 package com.example.findingyourvoice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.view.GravityCompat
@@ -17,6 +18,10 @@ class ParentActivity : AppCompatActivity() {
 
         btnMenu.setOnClickListener {
             drawer_layout.openDrawer(GravityCompat.START)
+        }
+        btnHome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
         when(type) {
