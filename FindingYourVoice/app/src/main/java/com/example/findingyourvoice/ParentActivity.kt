@@ -39,7 +39,7 @@ class ParentActivity : AppCompatActivity() {
 
                 }
                 R.id.nav_disclaimer -> {
-
+                    //findNavController(R.id.nav_disclaimer).navigate(R.id.com.)
                 }
                 R.id.nav_settings -> {
 

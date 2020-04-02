@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import kotlinx.android.synthetic.main.activity_disclaimers.*
 import kotlinx.android.synthetic.main.activity_resources2.*
 import kotlinx.android.synthetic.main.app_bar.*
 
