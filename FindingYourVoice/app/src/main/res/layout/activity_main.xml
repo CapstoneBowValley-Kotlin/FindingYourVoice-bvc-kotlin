@@ -21,55 +21,45 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/FYV_button"
-            android:layout_width="match_parent"
-            android:layout_height="105dp"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/group_253"
-            android:drawableRight="@drawable/big_rock"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/finding_your_voice"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-        <Button
             android:id="@+id/KYR_button"
             android:layout_width="match_parent"
-            android:layout_height="105dp"
+            android:layout_height="200dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
-            android:drawableLeft="@drawable/group_325"
-            android:drawableRight="@drawable/big_rock"
+            android:background="#008B8B"
+            android:drawableStart="@drawable/group_325"
+            android:drawableEnd="@drawable/big_rock"
             android:text="@string/know_your_rights"
             android:textColor="@android:color/white"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/resource_button"
             android:layout_width="match_parent"
-            android:layout_height="105dp"
+            android:layout_height="200dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
-            android:drawableLeft="@drawable/lady_resources"
-            android:drawableRight="@drawable/big_rock"
+            android:background="#008B8B"
+            android:drawableStart="@drawable/lady_resources"
+            android:drawableEnd="@drawable/big_rock"
             android:text="@string/resources"
             android:textColor="@android:color/white"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/Funders_button"
+            android:id="@+id/FYV_button"
             android:layout_width="match_parent"
-            android:layout_height="105dp"
+            android:layout_height="200dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
-            android:drawableLeft="@drawable/big_rock"
-            android:drawableRight="@drawable/big_rock"
-            android:text="@string/funders_disclaimers"
+            android:background="#008B8B"
+            android:drawableStart="@drawable/group_253"
+            android:drawableEnd="@drawable/big_rock"
+            android:text="@string/finding_your_voice"
             android:textColor="@android:color/white"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -103,7 +93,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:srcCompat="@drawable/home_logo" />
+        app:srcCompat="@drawable/home_logo"
+        android:contentDescription="@string/icon" />
 
     <ImageButton
         android:id="@+id/menu_button"
@@ -115,6 +106,7 @@
         app:layout_constraintEnd_toStartOf="@+id/editText2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        android:contentDescription="@string/icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

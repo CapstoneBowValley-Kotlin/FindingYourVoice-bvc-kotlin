@@ -79,4 +79,6 @@ Your safety at work is protected by 3 laws (pieces of legislation):
 
     <string name="emp_std_content3">The Employment Standards Code creates Alberta’s minimum standards of employment in areas outside of health and safety that are related to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves, and termination of employment. It also establishes the steps tp follow  in cases where employment standards have not been met, such as wrongful termination of employment.</string>
     <string name="ab_employment_standard_rules">AB Employment Standard Rules</string>
+    <string name="disclaimer">Disclaimer:</string>
+    <string name="i_agree">I Agree</string>
 </resources>
