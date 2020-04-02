@@ -7,6 +7,7 @@
             name="chat"
             type="com.example.findingyourvoice.Chat" />
     </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -15,11 +16,11 @@
             android:id="@+id/sender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxWidth="200dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:background="#129C96"
             android:fontFamily="@font/roboto"
+            android:maxWidth="200dp"
             android:text="@{chat.info}"
             android:textColor="#FFFEFE"
             android:textSize="12dp"
