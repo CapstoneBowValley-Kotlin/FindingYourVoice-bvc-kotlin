@@ -23,7 +23,7 @@ class Resources : AppCompatActivity() {
 
             startActivity(myIntent)
 
-            FYR_Home_ImageView.setOnClickListener {
+            btnHome.setOnClickListener {
                 val intent = Intent(this,MainActivity::class.java)
                 Log.d("Meenu","Home button")
                 startActivity(intent)

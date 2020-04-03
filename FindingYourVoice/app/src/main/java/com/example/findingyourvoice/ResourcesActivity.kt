@@ -4,9 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AlertDialog
-import kotlinx.android.synthetic.main.activity_disclaimers.*
 import kotlinx.android.synthetic.main.activity_resources2.*
 import kotlinx.android.synthetic.main.app_bar.*
 
@@ -16,15 +14,11 @@ class ResourcesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resources2)
 
-       // imageView2.setOnClickListener {
-         //   val intent =Intent(this,MainActivity::class.java)
-           // startActivity(intent)
-        //}
-        FYR_Home_ImageView.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
-            Log.d("Meenu","Home button")
+        btnHome.setOnClickListener {
+            val intent =Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
+
         btnCall1.setOnClickListener {
             val dialog = AlertDialog.Builder(this)
             dialog.setPositiveButton("Yes") { _, _ ->
