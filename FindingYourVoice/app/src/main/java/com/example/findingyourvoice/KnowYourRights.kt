@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.findingyourvoice.*
 import kotlinx.android.synthetic.main.activity_know_your_rights.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.app_bar.*
 import kotlinx.android.synthetic.main.fragment_oh.*
 
 class KnowYourRights : AppCompatActivity() {
@@ -16,7 +17,7 @@ class KnowYourRights : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_know_your_rights)
-        Workplace_safety_Home_imageView.setOnClickListener {
+        FYR_Home_ImageView.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             Log.d("Know Your Rights", "I am in Know Your Rights Activity")
             startActivity(intent)
