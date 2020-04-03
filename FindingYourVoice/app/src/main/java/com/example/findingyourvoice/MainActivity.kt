@@ -3,7 +3,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.Menu
 import com.example.knowyourrights.KnowYourRights
 import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
@@ -31,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         // Log.d: Send a DEBUG log message and log the exception.
         resource_button.setOnClickListener {
             Log.d("MENU", "Button is clicked")
-            startActivity(Intent(this, ResourcesActivity::class.java))
+            startActivity(Intent(this, ParentActivity::class.java))
         }
         FYV_button.setOnClickListener {
             /*val intent =Intent(this,FindingYourVoice::class.java)
@@ -45,10 +44,10 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("type", "safety")
             startActivity(intent)
         }
-       /* Funders_button.setOnClickListener {
+        Funders_button.setOnClickListener {
             val intent = Intent(this, ParentActivity::class.java)
             intent.putExtra("type", "disclaimer")
             startActivity(intent)
-        }*/
+        }
     }
 }
