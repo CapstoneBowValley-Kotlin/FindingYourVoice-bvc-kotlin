@@ -20,4 +20,9 @@
         android:name="com.example.findingyourvoice.fragments.DisclaimerFragment"
         android:label="DisclaimerFragment" />
 
+    <fragment
+        android:id="@+id/ohsFragment"
+        android:name="com.example.findingyourvoice.fragments.OHSFragment"
+        android:label="OHSFragment" />
+
 </navigation>

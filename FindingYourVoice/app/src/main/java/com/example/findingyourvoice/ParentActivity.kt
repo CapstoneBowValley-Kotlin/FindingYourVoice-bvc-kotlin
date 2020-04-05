@@ -34,7 +34,9 @@ class ParentActivity : AppCompatActivity() {
             "disclaimer" -> {
                 findNavController(R.id.fragment).navigate(R.id.disclaimerFragment)
             }
-
+            "ohs" -> {
+                findNavController(R.id.fragment).navigate(R.id.ohsFragment)
+            }
         }
 
         nav_view.setNavigationItemSelectedListener {
@@ -49,7 +51,7 @@ class ParentActivity : AppCompatActivity() {
 
                 }
                 R.id.nav_occupational_health_and_safety -> {
-
+                    findNavController(R.id.fragment).navigate(R.id.ohsFragment)
                 }
                 R.id.nav_finding_your_voice -> {
                     findNavController(R.id.fragment).navigate(R.id.findingYourVoiceFragment)
