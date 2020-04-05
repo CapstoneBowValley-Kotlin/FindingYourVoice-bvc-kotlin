@@ -13,7 +13,7 @@ class SixthFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.resources,container,false)
+        return LayoutInflater.from(container?.context).inflate(R.layout.fragment_resources,container,false)
     }
 
 }

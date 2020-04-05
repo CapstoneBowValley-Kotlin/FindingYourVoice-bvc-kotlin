@@ -13,7 +13,7 @@ class FirstFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.workplace_safety,container,false)
+        return LayoutInflater.from(container?.context).inflate(R.layout.fragment_workplace_safety,container,false)
     }
 
 }

@@ -13,7 +13,7 @@ class ThirdFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.emloyment_standards,container,false)
+        return LayoutInflater.from(container?.context).inflate(R.layout.fragment_workplace_safety,container,false)
     }
 
 }
