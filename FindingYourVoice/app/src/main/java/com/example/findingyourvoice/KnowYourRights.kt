@@ -21,17 +21,17 @@ class KnowYourRights : AppCompatActivity() {
             Log.d("Know Your Rights", "I am in Know Your Rights Activity")
             startActivity(intent)
         }
-      OHS_button.setOnClickListener {
-          supportFragmentManager.beginTransaction()
-              .replace(R.id.Frame_Layout,OHSFragment()).commit()
-      }
+        OHS_button.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.Frame_Layout, OHSFragment()).commit()
+        }
         Human_Rights_button.setOnClickListener {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.Frame_Layout,Human_RightsFragment()).commit()
+                .replace(R.id.Frame_Layout, Human_RightsFragment()).commit()
         }
         empStandard_button.setOnClickListener {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.Frame_Layout,Employment_StandardsFragment()).commit()
+                .replace(R.id.Frame_Layout, Employment_StandardsFragment()).commit()
         }
 
     }

@@ -11,4 +11,12 @@
         android:id="@+id/findingYourVoiceFragment"
         android:name="com.example.findingyourvoice.fragments.FindingYourVoiceFragment"
         android:label="FindingYourVoiceFragment" />
+    <fragment
+        android:id="@+id/workplaceSafetyFragment"
+        android:name="com.example.findingyourvoice.fragments.WorkplaceSafetyFragment"
+        android:label="WorkplaceSafetyFragment" />
+    <fragment
+        android:id="@+id/disclaimerFragment"
+        android:name="com.example.findingyourvoice.fragments.DisclaimerFragment"
+        android:label="DisclaimerFragment" />
 </navigation>
