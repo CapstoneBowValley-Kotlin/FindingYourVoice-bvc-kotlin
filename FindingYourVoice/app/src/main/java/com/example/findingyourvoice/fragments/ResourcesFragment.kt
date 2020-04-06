@@ -25,18 +25,25 @@ class ResourcesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Call button click handler
         btnCall1.setOnClickListener {
+            //To show call confirmation popup.
             val dialog = AlertDialog.Builder(activity!!)
+            //Yes button on popup.
             dialog.setPositiveButton("Yes") { _, _ ->
                 val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:780-486-9009"))
                 startActivity(intent)
             }
+            //setup no button on popup
             dialog.setNegativeButton("No") { _, _ ->
 
             }
+
             dialog.setMessage("Are you sure, you'd like to call\n(780)486-9009")
-            dialog.show()
+            dialog.show() //finally display popup on screen.
         }
+
+        //Call button click handler
         btnCall2.setOnClickListener {
             val dialog = AlertDialog.Builder(activity!!)
             dialog.setPositiveButton("Yes") { _, _ ->
@@ -50,10 +57,12 @@ class ResourcesFragment : Fragment() {
             dialog.show()
         }
         btnLink1.setOnClickListener {
+            //Intent with action ACTION_VIEW to open url in web browser.
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.workershealthcentre.ca/"))
             startActivity(intent)
         }
         btnLink2.setOnClickListener {
+            //Intent with action ACTION_VIEW to open url in web browser.
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.helpwrc.org/"))
             startActivity(intent)
         }
