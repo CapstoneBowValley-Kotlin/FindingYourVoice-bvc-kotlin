@@ -19,4 +19,8 @@
         android:id="@+id/disclaimerFragment"
         android:name="com.example.findingyourvoice.fragments.DisclaimerFragment"
         android:label="DisclaimerFragment" />
+    <activity
+        android:id="@+id/parentActivity"
+        android:name="com.example.findingyourvoice.ParentActivity"
+        android:label="ParentActivity" />
 </navigation>

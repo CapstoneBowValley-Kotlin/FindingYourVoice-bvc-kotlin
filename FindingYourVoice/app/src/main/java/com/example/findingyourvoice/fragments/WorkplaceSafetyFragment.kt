@@ -26,6 +26,23 @@ class WorkplaceSafetyFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val type = arguments?.getString("type")
+
+        when(type) {
+            "ohs" -> {
+                childFragmentManager.beginTransaction()
+                    .replace(R.id.Frame_Layout, OHSFragment()).commit()
+            }
+            "hr" -> {
+                childFragmentManager.beginTransaction()
+                    .replace(R.id.Frame_Layout, Human_RightsFragment()).commit()
+            }
+            "es" -> {
+                childFragmentManager.beginTransaction()
+                    .replace(R.id.Frame_Layout, Employment_StandardsFragment()).commit()
+            }
+        }
+
         OHS_button.setOnClickListener {
             childFragmentManager.beginTransaction()
                 .replace(R.id.Frame_Layout, OHSFragment()).commit()

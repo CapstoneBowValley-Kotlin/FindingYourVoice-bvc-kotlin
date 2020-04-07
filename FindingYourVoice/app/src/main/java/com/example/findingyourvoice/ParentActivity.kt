@@ -42,13 +42,19 @@ class ParentActivity : AppCompatActivity() {
                     findNavController(R.id.fragment).navigate(R.id.workplaceSafetyFragment)
                 }
                 R.id.nav_human_rights -> {
-
+                    val bundle = Bundle()
+                    bundle.putString("type", "hr")
+                    findNavController(R.id.fragment).navigate(R.id.workplaceSafetyFragment, bundle)
                 }
                 R.id.nav_employment_standards -> {
-
+                    val bundle = Bundle()
+                    bundle.putString("type", "es")
+                    findNavController(R.id.fragment).navigate(R.id.workplaceSafetyFragment, bundle)
                 }
                 R.id.nav_occupational_health_and_safety -> {
-
+                    val bundle = Bundle()
+                    bundle.putString("type", "ohs")
+                    findNavController(R.id.fragment).navigate(R.id.workplaceSafetyFragment, bundle)
                 }
                 R.id.nav_finding_your_voice -> {
                     findNavController(R.id.fragment).navigate(R.id.findingYourVoiceFragment)
