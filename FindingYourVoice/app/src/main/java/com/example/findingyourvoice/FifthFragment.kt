@@ -13,7 +13,7 @@ class FifthFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.finding_your_voice,container,false)
+        return LayoutInflater.from(container?.context).inflate(R.layout.fragment_finding_your_voice,container,false)
     }
 
 

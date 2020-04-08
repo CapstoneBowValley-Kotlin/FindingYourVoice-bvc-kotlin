@@ -13,7 +13,7 @@ class SeventhFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return LayoutInflater.from(container?.context).inflate(R.layout.disclaimer,container,false)
+        return LayoutInflater.from(container?.context).inflate(R.layout.fragment_disclaimer,container,false)
     }
 
 }
