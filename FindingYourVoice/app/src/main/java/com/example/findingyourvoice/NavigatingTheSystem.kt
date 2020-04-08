@@ -14,5 +14,9 @@ class NavigatingTheSystem : AppCompatActivity() {
         cardView_first.setOnClickListener {
             startActivity(intentChatCase1)
         }
+        val main = Intent(this,MainActivity::class.java)
+        imageView_logo.setOnClickListener {
+            startActivity(main)
+        }
     }
 }
