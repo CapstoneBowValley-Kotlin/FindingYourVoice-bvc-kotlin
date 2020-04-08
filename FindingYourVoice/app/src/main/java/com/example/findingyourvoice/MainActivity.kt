@@ -3,6 +3,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
 import com.example.knowyourrights.KnowYourRights
 import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
@@ -44,10 +45,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("type", "safety")
             startActivity(intent)
         }
-        Funders_button.setOnClickListener {
-            val intent = Intent(this, ParentActivity::class.java)
-            intent.putExtra("type", "disclaimer")
-            startActivity(intent)
-        }
+
     }
 }

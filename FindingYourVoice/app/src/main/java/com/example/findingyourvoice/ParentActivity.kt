@@ -66,9 +66,7 @@ class ParentActivity : AppCompatActivity() {
                 R.id.nav_disclaimer -> {
                     findNavController(R.id.fragment).navigate(R.id.disclaimerFragment)
                 }
-                R.id.nav_settings -> {
 
-                }
             }
             drawer_layout.closeDrawer(GravityCompat.START)
             true
