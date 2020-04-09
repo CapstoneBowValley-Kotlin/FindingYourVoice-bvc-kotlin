@@ -3,6 +3,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
 import com.example.knowyourrights.KnowYourRights
 import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
@@ -33,16 +34,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ParentActivity::class.java))
         }
         FYV_button.setOnClickListener {
-            val intent =Intent(this,FindingYourVoice::class.java)
+            /*val intent =Intent(this,FindingYourVoice::class.java)
+            startActivity(intent)*/
+            val intent = Intent(this, ParentActivity::class.java)
+            intent.putExtra("type", "find")
             startActivity(intent)
         }
         KYR_button.setOnClickListener {
-            val intent =Intent(this, KnowYourRights::class.java)
+            val intent = Intent(this, ParentActivity::class.java)
+            intent.putExtra("type", "safety")
             startActivity(intent)
         }
-        Funders_button.setOnClickListener {
-            val intent =Intent(this, Disclaimers::class.java)
-            startActivity(intent)
-        }
+
     }
 }

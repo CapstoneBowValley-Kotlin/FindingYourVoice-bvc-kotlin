@@ -10,7 +10,7 @@ class Popup_Disclaimer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_popup__disclaimer)
-        button.setOnClickListener {
+        Guide_link_button.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
