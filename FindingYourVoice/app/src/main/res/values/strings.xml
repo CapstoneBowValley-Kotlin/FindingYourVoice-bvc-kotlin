@@ -61,7 +61,7 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="maincontent5">Workers and employers in Alberta are subject to the Employment Standards Code and Employment Standrads Regulation</string>
     <string name="maincontent6">Employment Standards apply to all workers with a number of exemptions, such as live-in-workers, truckers, farm workers and firefighters. The Employment Standards Code establsihes Albertas minimum standards of employment in areas outside of health and safety that are relevant to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves and termination of employment. It also establsihes the processes in cases where employment standards have not been met, such as wrongful termination of employment</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="home_icon">Home Icon</string>
     <string name="home_icon_for_workplace_safety">Home Icon for workplace safety</string>
     <string name="workplace_safety_icon">Workplace safety icon</string>
