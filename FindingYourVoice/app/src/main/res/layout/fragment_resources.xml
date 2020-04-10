@@ -163,6 +163,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:textSize="16sp"
+            android:paddingBottom="24dp"
             android:layout_marginEnd="24dp"
             android:text="They provide free case work and public legal education program if you are having issues understanding your rights in your workplace. "
             app:layout_constraintEnd_toEndOf="parent"
@@ -175,6 +176,7 @@
             android:layout_marginTop="48dp"
             android:background="#129C96"
             android:id="@+id/sponsorDivider"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -185,6 +187,7 @@
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:textColor="#3C3C3C"
+            android:visibility="gone"
             android:id="@+id/sponsorTitle"
             android:textSize="26sp"
             android:textStyle="bold"
@@ -197,6 +200,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/sponsorContainer1"
             android:paddingRight="24dp"
+            android:visibility="gone"
             android:paddingLeft="24dp"
             android:paddingTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -216,6 +220,7 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/sponsorContainer2"
             android:paddingRight="24dp"
