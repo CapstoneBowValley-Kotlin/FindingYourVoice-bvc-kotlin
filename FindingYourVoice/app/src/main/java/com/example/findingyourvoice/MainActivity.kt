@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
-import com.example.knowyourrights.KnowYourRights
 import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val myIntent1 = Intent(this, Menu::class.java)
-        val myIntent = Intent(this, ResourcesActivity::class.java)
+        //val myIntent = Intent(this, ResourcesActivity::class.java)
         // Reference home_button
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
