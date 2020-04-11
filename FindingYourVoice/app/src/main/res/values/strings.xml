@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">FindingYourVoice</string>
-    <string name="intro">When faced with dilemma at work, many different factors can change the way you choose a solution. In the next page,you will answer questions to discover options available to you.
+    <string name="intro">When faced with dilemma at work, many different factors can change the way you choose a solution.
 </string>
     <string name="finding_your_voice">Finding Your Voice</string>
     <string name="home">HOME</string>
@@ -82,4 +82,7 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="i_agree">I Agree</string>
     <string name="basic_rights">Basic Rights</string>
     <string name="types_of_hazards">Types of Hazards</string>
+    <string name="the_alberta_worker_s_health_centre_and_calgary_workers_resource_centre_provide_free_help_for_people_who_have_issues_with_health_and_safety_and_worker_rights">The Alberta Worker’s Health Centre and Calgary Workers Resource Centre provide free help for people who have issues with health and safety and worker rights:</string>
+    <string name="alberta_workers_health_centre">Alberta Workers Health Centre:</string>
+    <string name="para3">In the next page,you will find chatrooms where you will be guided through problems in the workplace and you will answer questions to discover the different options available to you.</string>
 </resources>
