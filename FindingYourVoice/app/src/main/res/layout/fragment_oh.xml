@@ -55,24 +55,24 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="175dp"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="400dp"
         android:layout_marginBottom="283dp"
         android:background="@drawable/buttons"
         android:inputType="textImeMultiLine"
-        android:text="@string/basic_rights" />
+        android:text="@string/basic_rights"/>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="200dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/button3"
         android:layout_alignRight="@id/OHS_Content_scrollview"
-        android:layout_marginStart="243dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="286dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="283dp"
         android:background="@drawable/buttons"
         android:inputType="textImeMultiLine"
         android:text="@string/types_of_hazards"
