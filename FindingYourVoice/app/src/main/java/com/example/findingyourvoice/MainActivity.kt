@@ -44,6 +44,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("type", "safety")
             startActivity(intent)
         }
+        disclaimer_button.setOnClickListener {
+            val intent = Intent(this, ParentActivity::class.java )
+            intent.putExtra("type", "disclaimer")
+            startActivity(intent)
+        }
 
     }
 }
