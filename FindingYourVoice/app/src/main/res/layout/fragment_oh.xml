@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".OHSFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+
+        android:id="@+id/OHS_Content_scrollview"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/OHS_Content_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="579dp"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:text="@string/OHS_Content"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="392dp"
+        android:background="@drawable/button_active"
+        android:drawableStart="@drawable/btn_link"
+        android:inputType="textImeMultiLine"
+        android:text="@string/current_legislation"
+        android:textColor="#ffffff"
+        tools:ignore="TextViewEdits" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="283dp"
+        android:background="@drawable/buttons"
+        android:inputType="textImeMultiLine"
+        android:text="@string/basic_rights"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/button3"
+        android:layout_alignRight="@id/OHS_Content_scrollview"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="283dp"
+        android:background="@drawable/buttons"
+        android:inputType="textImeMultiLine"
+        android:text="@string/types_of_hazards"
+        android:textStyle="normal"
+        tools:ignore="TextViewEdits" />
+
+</RelativeLayout>
