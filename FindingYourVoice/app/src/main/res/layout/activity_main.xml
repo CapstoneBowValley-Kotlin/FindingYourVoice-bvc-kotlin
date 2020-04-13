@@ -21,27 +21,12 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/FYV_button"
-            android:layout_width="match_parent"
-            android:layout_height="105dp"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/group_253"
-            android:drawableRight="@drawable/big_rock"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/finding_your_voice"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-        <Button
             android:id="@+id/KYR_button"
             android:layout_width="match_parent"
             android:layout_height="105dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
-            android:drawableLeft="@drawable/group_325"
-            android:drawableRight="@drawable/big_rock"
+            android:background="@drawable/workplace_menu_bar"
             android:text="@string/know_your_rights"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -52,12 +37,34 @@
             android:layout_height="105dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
-            android:drawableLeft="@drawable/lady_resources"
-            android:drawableRight="@drawable/big_rock"
+            android:background="@drawable/resources_menu_bar"
             android:text="@string/resources"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/FYV_button"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/finding_your_voice_menu_bar"
+            android:text="@string/finding_your_voice"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/disclaimer_button"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/disclaimer_menu_bar"
+            android:text="Disclaimer"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+
+            />
 
     </LinearLayout>
 
@@ -67,7 +74,7 @@
         android:layout_height="155dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="76dp"
         android:adjustViewBounds="true"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
