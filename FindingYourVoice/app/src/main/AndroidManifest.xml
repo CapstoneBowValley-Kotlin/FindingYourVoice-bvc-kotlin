@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.findingyourvoice">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,18 +11,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NavigatingTheSystem"></activity>
+        <activity android:name=".Home"></activity>
+        <activity android:name=".DisclaimerActivity" ></activity>
+        <activity android:name=".Chat_Case1" />
+        <activity
+            android:name=".Menu"
+            android:label=".Menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Disclaimers" />
         <activity android:name=".Resources" />
         <activity android:name=".FindingYourVoice" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ResourcesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Popup_Disclaimer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NavigatingTheSystem" />
         <activity android:name="com.example.knowyourrights.KnowYourRights" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
