@@ -5,10 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.view.GravityCompat
 import androidx.navigation.findNavController
+import com.example.findingyourvoice.fragments.FindingYourVoiceFragment
 import kotlinx.android.synthetic.main.activity_parent.*
 import kotlinx.android.synthetic.main.app_bar.*
 
 class ParentActivity : AppCompatActivity() {
+
+    fun openFindVoice() {
+        findNavController(R.id.fragment).navigate(R.id.findingYourVoiceFragment)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

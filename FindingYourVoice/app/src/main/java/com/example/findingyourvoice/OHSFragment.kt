@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.findingyourvoice.adapters.SectionsPagerAdapter
+import com.example.findingyourvoice.fragments.FindingYourVoiceFragment
+import kotlinx.android.synthetic.main.fragment_human__rights.*
 import kotlinx.android.synthetic.main.fragment_oh.*
 
 
@@ -33,6 +35,10 @@ class OHSFragment : Fragment() {
         viewPager.adapter = sectionsPagerAdapter
 
         tabLayout.setupWithViewPager(viewPager)
+
+
+
+      
     }
 
 }
