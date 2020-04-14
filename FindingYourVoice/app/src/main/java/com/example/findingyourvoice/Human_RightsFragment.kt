@@ -43,5 +43,13 @@ class Human_RightsFragment : Fragment() {
         FYV_HR_button.setOnClickListener {
             (activity as? ParentActivity)?.openFindVoice()
         }
+
+        AB_Human_Rights_link_button.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.albertahumanrights.ab.ca/Documents/GuideProcess_Complainants.pdf) "))
+            startActivity(intent)
+        }
+        Guide_link_button.setOnClickListener{
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://www.qp.alberta.ca/documents/Acts/A25P5.pdf")))
+        }
     }
 }
