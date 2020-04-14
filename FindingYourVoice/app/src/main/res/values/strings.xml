@@ -67,11 +67,11 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="home_icon_for_workplace_safety">Home Icon for workplace safety</string>
     <string name="workplace_safety_icon">Workplace safety icon</string>
     <string name="OHS_Content">Most workers in Alberta are protected under the Alberta Health and Safety Act, Regulation and Code. Some workers, such as federal workers, live in care-givers, or farm workers may have their own separate legalisation.\n\n These laws are the minimum standards for protecting workers, and involve both workers and employers.</string>
-    <string name="human_rights_content">In addition to workplace safety, hazards, rights, and standards, Alberta has <a href=""> <font color ="#008B8B"> legislation</font></a> that relates to the rights of all people, regardless of background such as <a href=""><font color ="#008B8B">ethnocultural</font></a> group, source of income, participation in a labour union, gender, age, sexual orientation, or immigration status.</string>
+    <string name="human_rights_content">In addition to workplace safety, hazards, rights, and standards, Alberta has <a href=""> <font color="#008B8B"> legislation</font></a> that relates to the rights of all people, regardless of background such as <a href=""><font color="#008B8B">ethnocultural</font></a> group, source of income, participation in a labour union, gender, age, sexual orientation, or immigration status.</string>
     <string name="employment_standards_content">Workers and employers in Alberta must follow the Employment Standards Code and Employment Standards Regulation\n\n </string>
     <string name="current_legislation">Current Legislation</string>
     <string name="icon">Icon</string>
-    <string name="human_rights_content1">Human Rights in Alberta relate to the idea that everyone should be free from <a href=""><font color ="#008B8B">discrimination</font></a>, and apply to employers and workers. Employers cannot sign away their employees human rights. In cases of human rights breaches ,specific steps need to be taken. <br>
+    <string name="human_rights_content1">Human Rights in Alberta relate to the idea that everyone should be free from <a href=""><font color="#008B8B">discrimination</font></a>, and apply to employers and workers. Employers cannot sign away their employees human rights. In cases of human rights breaches ,specific steps need to be taken. <br>
         You may read these steps by tapping the buttons below:\n</br></string>
     <string name="ab_human_right_act">AB Human Right Act</string>
     <string name="a_guide_for_complaints">A Guide For Complaints</string>
@@ -79,7 +79,7 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="ab_employment_standard_regulations">AB Employment Standard Regulations</string>
     <string name="human_rights_content2">Employment Standards apply to all the workers with a number of exemptions,such as live- workers, truckers,farm workers and firefighters. </string>
 
-    <string name="emp_std_content3">The Employment Standards Code creates Alberta’s minimum standards of employment in areas outside of health and safety that are related to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves, and <a href=""><font color ="#008B8B">termination</font></a> of employment. It also establishes the steps tp follow  in cases where employment standards have not been met, such as wrongful termination of employment.</string>
+    <string name="emp_std_content3">The Employment Standards Code creates Alberta’s minimum standards of employment in areas outside of health and safety that are related to the workplace. These include wages, hours of work, overtime, vacation and holidays, leaves, and <a href=""><font color="#008B8B">termination</font></a> of employment. It also establishes the steps tp follow  in cases where employment standards have not been met, such as wrongful termination of employment.</string>
     <string name="ab_employment_standard_rules">AB Employment Standard Rules</string>
     <string name="disclaimer">Disclaimer:</string>
     <string name="i_agree">I Agree</string>
@@ -88,4 +88,7 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="the_alberta_worker_s_health_centre_and_calgary_workers_resource_centre_provide_free_help_for_people_who_have_issues_with_health_and_safety_and_worker_rights">The Alberta Worker’s Health Centre and Calgary Workers Resource Centre provide free help for people who have issues with health and safety and worker rights:</string>
     <string name="alberta_workers_health_centre">Alberta Workers Health Centre:</string>
     <string name="para3">In the next page,you will find chatrooms where you will be guided through problems in the workplace and you will answer questions to discover the different options available to you.</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>
