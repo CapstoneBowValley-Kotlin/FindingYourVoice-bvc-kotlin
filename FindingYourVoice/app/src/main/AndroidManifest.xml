@@ -11,30 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".TestActivity"
-            android:label="@string/title_activity_test"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".DisclaimerActivity" />
+
+
+
         <activity android:name=".Chat_Case1" />
-        <activity
-            android:name=".Menu"
             android:label=".Menu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ParentActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Disclaimers" />
-        <activity android:name=".Resources" />
-        <activity android:name=".FindingYourVoice" />
+     
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ResourcesActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ParentActivity"
+
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Popup_Disclaimer">
             <intent-filter>
@@ -44,7 +34,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".NavigatingTheSystem" />
-        <activity android:name="com.example.knowyourrights.KnowYourRights" />
 
         <meta-data
             android:name="preloaded_fonts"

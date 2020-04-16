@@ -25,5 +25,7 @@ class OHSPlaceholderFragment : Fragment() {
         fun newInstance(): OHSPlaceholderFragment {
             return OHSPlaceholderFragment()
         }
+
     }
+
 }

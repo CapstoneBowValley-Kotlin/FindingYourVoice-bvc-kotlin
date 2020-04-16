@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-    <!--    tools:context=".KnowYourRights"-->
 
 
     <include
@@ -62,14 +60,14 @@
 
             <TextView
                 android:id="@+id/MainContent_textview"
-                android:layout_width="364dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="#D3D3D3"
-                android:drawableLeft="@drawable/group_325"
+                android:drawableStart="@drawable/group_325"
                 android:gravity="center"
                 android:text="@string/maincontent"
                 android:textAlignment="center"
@@ -95,46 +93,58 @@
 
                 <Button
                     android:id="@+id/OHS_button"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_ohs"
                     android:text="@string/ohs"
+                    android:textColor="#34a88d"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginEnd="4dp"
+                    tools:ignore="ButtonStyle" />
 
                 <Button
                     android:id="@+id/Human_Rights_button"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:foregroundGravity="center"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_ohs"
                     android:freezesText="true"
+                    android:textColor="#34a88d"
                     android:text="@string/human_rights"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="4dp"
+                    tools:ignore="ButtonStyle" />
 
                 <Button
                     android:id="@+id/empStandard_button"
-                    style="@style/Widget.AppCompat.Button.Borderless"
                     android:layout_width="wrap_content"
-                    android:layout_height="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/button_ohs"
                     android:text="@string/empstandard"
                     android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#34a88d"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
 
             </LinearLayout>
 
             <FrameLayout
                 android:id="@+id/Frame_Layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginTop="15dp"
-                android:layout_weight="1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
