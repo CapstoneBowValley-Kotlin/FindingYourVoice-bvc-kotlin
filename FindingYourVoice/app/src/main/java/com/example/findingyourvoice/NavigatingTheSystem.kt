@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_navigating_the_system.*
+import kotlinx.android.synthetic.main.app_bar.*
 
 class NavigatingTheSystem : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class NavigatingTheSystem : AppCompatActivity() {
             startActivity(intentChatCase1)
         }
         val main = Intent(this,MainActivity::class.java)
-        imageView_logo.setOnClickListener {
+        btnHome.setOnClickListener {
             startActivity(main)
         }
     }

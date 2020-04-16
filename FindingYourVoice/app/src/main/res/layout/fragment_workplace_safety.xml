@@ -59,7 +59,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:background="#D3D3D3"
-            android:drawableLeft="@drawable/group_325"
+            android:drawableStart="@drawable/group_325"
             android:gravity="center"
             android:text="@string/maincontent"
             android:textAlignment="center"

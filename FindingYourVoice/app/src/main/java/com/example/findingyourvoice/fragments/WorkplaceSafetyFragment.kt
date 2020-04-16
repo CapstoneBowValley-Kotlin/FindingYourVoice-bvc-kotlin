@@ -42,6 +42,7 @@ class WorkplaceSafetyFragment : Fragment() {
                     .replace(R.id.Frame_Layout, Employment_StandardsFragment()).commit()
             }
         }
+        // Adding OHS , HUman Rights & Employment Standard fragments to Workplace Safety on click Listener event
 
         OHS_button.setOnClickListener {
             childFragmentManager.beginTransaction()

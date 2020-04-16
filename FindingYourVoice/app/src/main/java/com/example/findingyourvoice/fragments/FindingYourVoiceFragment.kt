@@ -26,6 +26,7 @@ class FindingYourVoiceFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val intentChatCase1 = Intent(activity, NavigatingTheSystem::class.java)
+        // On click event to NEXT button so that it will take to NTS page
         Next_button.setOnClickListener {
             startActivity(intentChatCase1)
         }

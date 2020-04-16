@@ -9,6 +9,7 @@
     <!-- TODO: Update blank fragment layout -->
 
 
+    <!-- Textview for paragraph 1-->
     <TextView
         android:id="@+id/Human_Rights_textView1"
         android:layout_width="match_parent"
@@ -22,6 +23,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <!-- Textview for paragraph 2-->
     <TextView
         android:id="@+id/emp_std_textView2"
         android:layout_width="match_parent"
@@ -37,11 +40,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Human_Rights_textView1" />
 
+    <!-- Button for AB Human Right Act link-->
     <Button
         android:id="@+id/AB_Human_Rights_link_button"
-        android:layout_width="198dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="10dp"
+        android:layout_width="202dp"
+        android:layout_height="88dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/workplacesafetylink_buttonstyle"
@@ -53,13 +56,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emp_std_textView2" />
 
+    <!-- Button for A Guide for complaints link-->
     <Button
         android:id="@+id/Guide_link_button"
-        android:layout_width="178dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="10dp"
+        android:layout_width="217dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
         android:background="@drawable/workplacesafetylink_buttonstyle"
         android:drawableStart="@drawable/btn_link"
         android:text="@string/a_guide_for_complaints"
@@ -69,6 +72,8 @@
         app:layout_constraintStart_toEndOf="@+id/AB_Human_Rights_link_button"
         app:layout_constraintTop_toBottomOf="@+id/emp_std_textView2" />
 
+
+    <!-- Finding Your Voice button to move to finding your voice page -->
     <Button
         android:id="@+id/FYV_HR_button"
         android:layout_width="250dp"
@@ -86,7 +91,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AB_Human_Rights_link_button" />
+        app:layout_constraintTop_toBottomOf="@+id/AB_Human_Rights_link_button"
+        tools:ignore="RtlSymmetry" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
