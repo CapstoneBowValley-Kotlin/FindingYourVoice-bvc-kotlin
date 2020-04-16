@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
     app:startDestination="@id/resourcesFragment">
 
     <fragment
@@ -11,4 +12,20 @@
         android:id="@+id/findingYourVoiceFragment"
         android:name="com.example.findingyourvoice.fragments.FindingYourVoiceFragment"
         android:label="FindingYourVoiceFragment" />
+    <fragment
+        android:id="@+id/workplaceSafetyFragment"
+        android:name="com.example.findingyourvoice.fragments.WorkplaceSafetyFragment"
+        android:label="WorkplaceSafetyFragment" />
+    <fragment
+        android:id="@+id/disclaimerFragment"
+        android:name="com.example.findingyourvoice.fragments.DisclaimerFragment"
+        android:label="DisclaimerFragment" />
+    <fragment
+        android:id="@+id/ohsFragment"
+        android:name="com.example.findingyourvoice.fragments.OHSFragment"
+        android:label="OHSFragment" />
+    <activity
+        android:id="@+id/parentActivity"
+        android:name="com.example.findingyourvoice.ParentActivity"
+        android:label="ParentActivity" />
 </navigation>

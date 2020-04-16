@@ -3,7 +3,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.knowyourrights.KnowYourRights
+import android.view.Menu
 import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val myIntent1 = Intent(this, Menu::class.java)
-        val myIntent = Intent(this, ResourcesActivity::class.java)
+        //val myIntent = Intent(this, ResourcesActivity::class.java)
         // Reference home_button
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
@@ -33,16 +33,22 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ParentActivity::class.java))
         }
         FYV_button.setOnClickListener {
-            val intent =Intent(this,FindingYourVoice::class.java)
+            /*val intent =Intent(this,FindingYourVoice::class.java)
+            startActivity(intent)*/
+            val intent = Intent(this, ParentActivity::class.java)
+            intent.putExtra("type", "find")
             startActivity(intent)
         }
         KYR_button.setOnClickListener {
-            val intent =Intent(this, KnowYourRights::class.java)
+            val intent = Intent(this, ParentActivity::class.java)
+            intent.putExtra("type", "safety")
             startActivity(intent)
         }
-        Funders_button.setOnClickListener {
-            val intent =Intent(this, Disclaimers::class.java)
+        disclaimer_button.setOnClickListener {
+            val intent = Intent(this, ParentActivity::class.java )
+            intent.putExtra("type", "disclaimer")
             startActivity(intent)
         }
+
     }
 }

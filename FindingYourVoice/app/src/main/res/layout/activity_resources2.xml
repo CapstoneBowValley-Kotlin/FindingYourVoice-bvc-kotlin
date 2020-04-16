@@ -52,7 +52,7 @@
         android:layout_marginTop="48dp"
         android:textSize="16sp"
         android:layout_marginEnd="24dp"
-        android:text="The Alberta Worker’s Health Centre and Calgary Workers Resource Centre provide free help for people who have issues with health and safety and worker rights:"
+        android:text="@string/the_alberta_worker_s_health_centre_and_calgary_workers_resource_centre_provide_free_help_for_people_who_have_issues_with_health_and_safety_and_worker_rights"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -65,7 +65,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:gravity="center"
-        android:text="Alberta Workers Health Centre: "
+        android:text="@string/alberta_workers_health_centre"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,44 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!-- vertical Linear layout for the entire page-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <!--    tools:context=".KnowYourRights"-->
 
+<!--Layout for title bar,side menu and home icon-->
+    <include
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-
-
+     <!-- Scroll view for the page-->
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/Workplace_safety_Home_imageView"
-                android:layout_width="50dp"
-                android:layout_height="44dp"
-                android:layout_marginStart="350dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="0dp"
-                android:contentDescription="@string/home_icon_for_workplace_safety"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.888"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.185"
-                app:srcCompat="@drawable/home" />
+            <!-- title Image icon-->
 
             <ImageView
                 android:id="@+id/workplacesafety_icon_imageview"
@@ -56,6 +45,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/workplace_safety_icon" />
 
+            <!-- textview for title-->
             <TextView
                 android:id="@+id/titleKYR_textview"
                 android:layout_width="126dp"
@@ -76,6 +66,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/workplacesafety_icon_imageview"
                 app:layout_constraintVertical_bias="0.0" />
 
+
+            <!-- textview for main content-->
             <TextView
                 android:id="@+id/MainContent_textview"
                 android:layout_width="364dp"
@@ -85,7 +77,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="#D3D3D3"
-                android:drawableLeft="@drawable/group_325"
+                android:drawableStart="@drawable/group_325"
                 android:gravity="center"
                 android:text="@string/maincontent"
                 android:textAlignment="center"
@@ -95,6 +87,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleKYR_textview" />
 
+            <!--  Horizontal linear layout for fragments-->
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
@@ -109,6 +102,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/MainContent_textview"
                 app:layout_constraintVertical_bias="0.586">
 
+                <!-- OHS button for OHS fragment -->
                 <Button
                     android:id="@+id/OHS_button"
                     style="@style/Widget.AppCompat.Button.Borderless"
@@ -120,6 +114,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+                <!-- Human Rights button for Human Rights fragment -->
                 <Button
                     android:id="@+id/Human_Rights_button"
                     style="@style/Widget.AppCompat.Button.Borderless"
@@ -132,6 +127,8 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+
+                <!-- Employment Standard button for Employment standards fragment -->
                 <Button
                     android:id="@+id/empStandard_button"
                     style="@style/Widget.AppCompat.Button.Borderless"
@@ -144,7 +141,7 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
-
+            <!-- frame layout to show content of fragments -->
             <FrameLayout
                 android:id="@+id/Frame_Layout"
                 android:layout_width="match_parent"
@@ -154,7 +151,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
