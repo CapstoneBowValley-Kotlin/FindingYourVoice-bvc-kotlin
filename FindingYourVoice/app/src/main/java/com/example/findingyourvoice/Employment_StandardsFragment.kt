@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_human__rights.*
 
 class Employment_StandardsFragment : Fragment() {
 
-
+// Creation of Employment Standard fragment inorder to display its content
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,17 +35,24 @@ class Employment_StandardsFragment : Fragment() {
                     .replace(R.id.Frame_Layout, FindingYourVoiceFragment()).commit()
             }
         }
+
+        // setting on click listener event to finding your voice button so that it will take to Finding your voice page
         FYV_EMP_STD_button.setOnClickListener {
             (activity as? ParentActivity)?.openFindVoice()
         }
 
+          // links to Employment standard code page on web url
         Emp_std_code_link_button.setOnClickListener{
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://www.qp.alberta.ca/documents/Acts/E09.pdf")))
         }
+
+        // links to Employment standard regulations page on web url
         emp_std_regulations_link_button.setOnClickListener{
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://www.qp.alberta.ca/documents/Regs/1997_014.pdf")))
         }
 
+
+        // links to Employment standard rules page on web url
         Emp_std_rules_link_button.setOnClickListener{
             startActivity((Intent(Intent.ACTION_VIEW, Uri.parse("https://www.alberta.ca/alberta-employment-standards-rules.aspx"))))
         }

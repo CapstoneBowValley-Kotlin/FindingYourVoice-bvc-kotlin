@@ -7,6 +7,7 @@
     tools:context=".Employment_StandardsFragment">
 
 
+    <!-- Textview for paragraph 1 -->
     <TextView
         android:id="@+id/Emp_standard_textview1"
         android:layout_width="429dp"
@@ -22,6 +23,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <!-- Textview for paragraph 2 -->
     <TextView
         android:id="@+id/emp_std_textView2"
         android:layout_width="match_parent"
@@ -35,25 +38,30 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Emp_standard_textview1" />
 
+    <!-- Imageview for Image on the Left hand side -->
     <ImageView
         android:id="@+id/Emp_imageView"
-        android:layout_width="148dp"
-        android:layout_height="198dp"
+        android:layout_width="120dp"
+        android:layout_height="305dp"
         android:layout_marginStart="20dp"
         android:src="@drawable/employment_standards_image"
         app:layout_constraintBottom_toTopOf="@+id/Emp_Std_textView3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emp_std_textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/emp_std_textView2"
+        android:contentDescription="@string/icon" />
 
+
+    <!-- Button for AB Employment Standard Code link -->
     <Button
         android:id="@+id/Emp_std_code_link_button"
-        android:layout_width="177dp"
-        android:layout_height="61dp"
+        android:layout_width="206dp"
+        android:layout_height="79dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/workplacesafetylink_buttonstyle"
+        android:drawableStart="@drawable/btn_link"
         android:text="@string/ab_employment_standard_code"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
@@ -62,15 +70,18 @@
         app:layout_constraintStart_toEndOf="@+id/Emp_imageView"
         app:layout_constraintTop_toBottomOf="@+id/emp_std_textView2" />
 
+
+    <!-- Button for AB Employment Standard Regulations link-->
     <Button
         android:id="@+id/emp_std_regulations_link_button"
-        android:layout_width="198dp"
-        android:layout_height="62dp"
+        android:layout_width="200dp"
+        android:layout_height="72dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/workplacesafetylink_buttonstyle"
+        android:drawableStart="@drawable/btn_link"
         android:text="@string/ab_employment_standard_regulations"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@id/Emp_std_rules_link_button"
@@ -78,15 +89,18 @@
         app:layout_constraintStart_toEndOf="@+id/Emp_imageView"
         app:layout_constraintTop_toBottomOf="@+id/Emp_std_code_link_button" />
 
+
+    <!-- Button for AB Employment Standard Rules link-->
     <Button
         android:id="@+id/Emp_std_rules_link_button"
-        android:layout_width="218dp"
-        android:layout_height="47dp"
+        android:layout_width="214dp"
+        android:layout_height="84dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/workplacesafetylink_buttonstyle"
+        android:drawableStart="@drawable/btn_link"
         android:text="@string/ab_employment_standard_rules"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
@@ -95,6 +109,7 @@
         app:layout_constraintStart_toEndOf="@+id/Emp_imageView"
         app:layout_constraintTop_toBottomOf="@id/emp_std_regulations_link_button" />
 
+    <!-- Textview for the last paragrapg-->
     <TextView
         android:id="@+id/Emp_Std_textView3"
         android:layout_width="wrap_content"
@@ -102,7 +117,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:text="@string/emp_std_content3"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/FYV_EMP_STD_button"
@@ -110,6 +125,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Emp_std_rules_link_button" />
 
+
+
+    <!-- Finding Your Voice button to move to Finding Your Voice Page -->
     <Button
         android:id="@+id/FYV_EMP_STD_button"
         android:layout_width="224dp"
@@ -121,7 +139,7 @@
         android:background="@drawable/fyv_button_style"
         android:drawableStart="@drawable/group303"
         android:gravity="center"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:text="@string/finding_your_voice"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
