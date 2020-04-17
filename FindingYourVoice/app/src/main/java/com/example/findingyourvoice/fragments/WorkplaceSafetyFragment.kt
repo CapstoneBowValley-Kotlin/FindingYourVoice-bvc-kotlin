@@ -56,6 +56,7 @@ class WorkplaceSafetyFragment : Fragment() {
             childFragmentManager.beginTransaction()
                 .replace(R.id.Frame_Layout, Employment_StandardsFragment()).commit()
         }
+
     }
 
 }
