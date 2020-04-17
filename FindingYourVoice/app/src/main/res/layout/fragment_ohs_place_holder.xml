@@ -1,66 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
+    android:orientation="vertical"
+    android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
     tools:context=".fragments.OHSPlaceholderFragment">
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="In Alberta, workers have 4 basic rights that relate to health safety."
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="3dp" />
-
+        android:layout_height="wrap_content"/>
     <TextView
-        android:id="@+id/textView9"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="85dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="179dp" />
+        android:text="Right To"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:id="@+id/btnPrev"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left"
+            android:layout_height="wrap_content"/>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/slider"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btnNext"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button_active"
         android:drawableStart="@drawable/btn_link"
         android:text="Read More"
         android:textAllCaps="false"
         android:textColor="#ffffff"
-        tools:ignore="TextViewEdits"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="226dp" />
+        tools:ignore="TextViewEdits" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="120dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        tools:layout_editor_absoluteX="281dp"
-        tools:layout_editor_absoluteY="109dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
