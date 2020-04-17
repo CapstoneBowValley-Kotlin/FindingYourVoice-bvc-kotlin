@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OHSPlaceholderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="As workers, we have legal responsibility to follow the health and safety rules, to not cause or participate in harassment, bullying, or violence, and to report unsafe work conditions. Although it is not always easy to do so, failure to do so can have serious consequences (such as undocumented injuries, or workplaces that remain unsafe). There are 4 hazards that relate to workplace health and safety:"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:id="@+id/btnPrev"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left"
+            android:layout_height="wrap_content"/>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/slider"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btnNext"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_active"
+        android:drawableStart="@drawable/btn_link"
+        android:text="Read More"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        tools:ignore="TextViewEdits" />
+
+</LinearLayout>
