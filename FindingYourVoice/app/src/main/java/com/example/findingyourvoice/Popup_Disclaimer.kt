@@ -13,6 +13,7 @@ class Popup_Disclaimer : AppCompatActivity() {
 
 
         // setOnClickListener: A user interface element the user can tap or click to perform an action
+        // On click event to NEXT button so that it will take to Main page
         Guide_link_button.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
