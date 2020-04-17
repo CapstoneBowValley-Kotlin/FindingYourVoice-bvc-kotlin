@@ -13,6 +13,37 @@
         android:layout_width="wrap_content"
         android:text="In Alberta, workers have 4 basic rights that relate to health safety."
         android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Right To"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:id="@+id/btnPrev"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left"
+            android:layout_height="wrap_content"/>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/slider"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btnNext"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/button2"
