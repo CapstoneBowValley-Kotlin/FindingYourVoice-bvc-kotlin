@@ -12,9 +12,9 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val main = Intent(this, MainActivity::class.java)
+        val popup = Intent(this, Popup_Disclaimer::class.java)
         layout_home.setOnClickListener {
-            startActivity(main)
+            startActivity(popup)
         }
     }
 }
