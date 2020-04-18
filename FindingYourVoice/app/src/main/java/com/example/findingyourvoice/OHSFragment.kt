@@ -1,5 +1,7 @@
 package com.example.findingyourvoice
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -27,6 +29,11 @@ class OHSFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+        //Adding url link to current legislatiom
+        current_legist_button.setOnClickListener{
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.alberta.ca/ohs-act-regulation-code.aspx")))
+        }
         val sectionsPagerAdapter =
             SectionsPagerAdapter(
                 context!!,

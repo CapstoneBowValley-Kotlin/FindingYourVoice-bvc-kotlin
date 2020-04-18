@@ -10,15 +10,19 @@
     tools:context=".fragments.OHSPlaceholderFragment">
 
     <TextView
+        android:id="@+id/textview_Heading"
         android:layout_width="wrap_content"
-        android:text="In Alberta, workers have 4 basic rights that relate to health safety."
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/in_alberta_workers_have_4_basic_rights_that_relate_to_health_safety"
+        android:textSize="16sp" />
+
     <TextView
+        android:id="@+id/Right_textView"
         android:layout_width="wrap_content"
-        android:text="Right To"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="32dp"
-        android:layout_height="wrap_content"/>
+        android:text="@string/right_to" />
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
@@ -29,7 +33,8 @@
             android:padding="4dp"
             android:id="@+id/btnPrev"
             app:srcCompat="@drawable/ic_keyboard_arrow_left"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/icon" />
         <androidx.viewpager.widget.ViewPager
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -42,20 +47,38 @@
             android:id="@+id/btnNext"
             android:padding="4dp"
             app:srcCompat="@drawable/ic_keyboard_arrow_right"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/icon" />
     </LinearLayout>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
+        android:layout_width="186dp"
+        android:layout_height="42dp"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
-        android:background="@drawable/button_active"
+        android:background="@drawable/workplacesafetylink_buttonstyle"
         android:drawableStart="@drawable/btn_link"
-        android:text="Read More"
+        android:text="@string/read_more"
         android:textAllCaps="false"
         android:textColor="#ffffff"
+        android:textSize="16sp"
         tools:ignore="TextViewEdits" />
+
+
+
+    <!--Finding Your Voice button-->
+    <Button
+        android:id="@+id/OHS_FYV_button"
+        android:layout_width="224dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/fyv_button_style"
+        android:drawableStart="@drawable/group303"
+        android:paddingStart="10dp"
+        android:text="@string/OHS_finding_your_voice"
+        android:textSize="18sp"
+        tools:ignore="RtlSymmetry" />
 
 </LinearLayout>

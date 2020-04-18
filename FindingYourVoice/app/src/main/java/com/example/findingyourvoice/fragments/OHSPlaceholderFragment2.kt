@@ -1,10 +1,13 @@
 package com.example.findingyourvoice.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.findingyourvoice.ParentActivity
 import com.example.findingyourvoice.R
 import com.example.findingyourvoice.SliderModel
 import com.example.findingyourvoice.adapters.SliderAdapter
@@ -24,6 +27,14 @@ class OHSPlaceholderFragment2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+ // Adding link to read more
+        button2.setOnClickListener{
+        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://workershealthcentre.ca/4-health-and-safety-rights/")))
+        }
+
+        OHS_fyv_button.setOnClickListener{
+            (activity as? ParentActivity)?.openFindVoice()
+        }
 
         val adapter = SliderAdapter(getList())
 
