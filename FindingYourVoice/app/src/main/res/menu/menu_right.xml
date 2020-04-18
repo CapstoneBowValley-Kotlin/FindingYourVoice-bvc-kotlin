@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Know Your Rights"
+        android:id="@+id/activity_know_your_rights"/>
+
+    <item android:title="Occupational Health and Safety"
+        android:id="@+id/activity_ohs"/>
+
+
+
+    <item android:title="Finding Your Voice"
+        android:id="@+id/activity_finding_your_voice"/>
+
+    <item android:title="Resources"
+        android:id="@+id/activity_resource"/>
+
+
+
+</menu>
