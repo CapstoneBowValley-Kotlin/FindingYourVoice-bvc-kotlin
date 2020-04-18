@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Constraint layout for the entire page-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,22 +8,24 @@
     android:layout_height="match_parent"
     tools:context=".Popup_Disclaimer">
 
+    <!-- textview for welcome -->
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="181dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:text="@string/disclaimer"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        android:id="@+id/textView5"
+        android:layout_width="455dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="80dp"
+        android:background="#009688"
+        android:gravity="center|top"
+        android:text="Welcome!"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- textview for main content-->
     <TextView
         android:id="@+id/textView15"
         android:layout_width="319dp"
@@ -29,45 +33,65 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="85dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="40dp"
         android:gravity="center"
         android:text="@string/para1"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/Guide_link_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
+    <!-- button for i agree-->
     <Button
         android:id="@+id/Guide_link_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="130dp"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="115dp"
         android:background="@android:color/white"
         android:gravity="center"
+        android:hapticFeedbackEnabled="false"
         android:text="@string/i_agree"
         android:textColor="#009688"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
+    <!-- imageview for image-->
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="466dp"
-        android:layout_height="270dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginEnd="1dp"
+        android:layout_width="455dp"
+        android:layout_height="249dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="21dp"
         android:layout_marginBottom="30dp"
         android:background="#009688"
+        android:foregroundGravity="center"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@drawable/disclaimer_illustration" />
+
+    <!-- textview for title-->
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="181dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/disclaimer"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
