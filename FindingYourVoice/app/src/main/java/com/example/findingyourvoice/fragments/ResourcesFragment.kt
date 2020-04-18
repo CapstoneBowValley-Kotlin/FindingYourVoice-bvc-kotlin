@@ -8,10 +8,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.findingyourvoice.MainActivity
 
 import com.example.findingyourvoice.R
+import com.tbruyelle.rxpermissions2.RxPermissions
+import com.tbruyelle.rxpermissions2.RxPermissionsFragment
 import kotlinx.android.synthetic.main.app_bar.*
 import kotlinx.android.synthetic.main.fragment_resources.*
 
@@ -28,13 +31,25 @@ class ResourcesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val rxPermission = RxPermissions(this)
+
         btnCall1.setOnClickListener {
             //To show call confirmation popup.
             val dialog = AlertDialog.Builder(activity!!)
             //Yes button on popup.
             dialog.setPositiveButton("Yes") { _, _ ->
-                val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:780-486-9009"))
-                startActivity(intent)
+                rxPermission.request(android.Manifest.permission.CALL_PHONE).subscribe({
+                    if (it) {
+                        val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:780-486-9009"))
+                        startActivity(intent)
+                    }
+                    else {
+                        Toast.makeText(context, "Call permission denied", Toast.LENGTH_SHORT).show()
+                    }
+                },{
+                    Toast.makeText(context, it.localizedMessage, Toast.LENGTH_SHORT).show()
+                })
+
             }
             //setup no button on popup
             dialog.setNegativeButton("No") { _, _ ->
@@ -49,8 +64,18 @@ class ResourcesFragment : Fragment() {
         btnCall2.setOnClickListener {
             val dialog = AlertDialog.Builder(activity!!)
             dialog.setPositiveButton("Yes") { _, _ ->
-                val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:(403)-264-8100"))
-                startActivity(intent)
+                rxPermission.request(android.Manifest.permission.CALL_PHONE).subscribe({
+                    if (it) {
+                        val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:(403)-264-8100"))
+                        startActivity(intent)
+                    }
+                    else {
+                        Toast.makeText(context, "Call permission denied", Toast.LENGTH_SHORT).show()
+                    }
+                },{
+                    Toast.makeText(context, it.localizedMessage, Toast.LENGTH_SHORT).show()
+                })
+
             }
             dialog.setNegativeButton("No") { _, _ ->
 
