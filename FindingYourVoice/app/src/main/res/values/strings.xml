@@ -91,4 +91,5 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="title_activity_test">TestActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="welcome">Welcome!</string>
 </resources>
