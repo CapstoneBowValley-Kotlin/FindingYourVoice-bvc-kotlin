@@ -20,6 +20,7 @@ class Chat_Case1 : AppCompatActivity() {
         val chats = arrayListOf<Chat>()
         var p:Int=0
         fun logic(type:Int){
+            //For adding chat based on user reply
         when(type){
             3->{
                 chats.add(Chat("It's good idea to ask for more information.",0))
@@ -169,6 +170,7 @@ class Chat_Case1 : AppCompatActivity() {
     }
 }
 
+//using recycler view to display chat and update it according to user selection
 class ChatAdapter(val items:List<Chat>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     class ChatViewHolder(val binding : ChatItemBinding): RecyclerView.ViewHolder(binding.root)
@@ -210,10 +212,6 @@ class ChatAdapter(val items:List<Chat>): RecyclerView.Adapter<RecyclerView.ViewH
             }
             }
         }
-/*
-    override fun onBindViewHolder(holder: ChatViewHolder, position: Int) {
-        holder.binding.chat=items[position]
-    }
-*/
+
 }
 
