@@ -21,7 +21,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_logo" />
+        app:srcCompat="@drawable/home_logo"
+        android:contentDescription="@string/icon" />
 
     <!--TextView for school of-->
     <TextView
@@ -31,7 +32,7 @@
         android:layout_marginStart="161dp"
         android:layout_marginEnd="160dp"
         android:layout_marginBottom="15dp"
-        android:text="School of"
+        android:text="@string/school_of"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
@@ -44,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Global Access"
+        android:text="@string/global_access"
         android:textColor="@color/colorPrimary"
         android:textSize="36sp"
         android:textStyle="bold"

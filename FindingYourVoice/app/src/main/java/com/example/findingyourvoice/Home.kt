@@ -6,6 +6,8 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar.*
 
+// The main logo screen
+
 class Home : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

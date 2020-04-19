@@ -97,4 +97,6 @@ Your safety at work is protected by 3 laws (pieces of legislation):
     <string name="read_more">Read More</string>
     <string name="as_workers_we_have_legal_responsibility_to_follow_the_health_and_safety_rules_to_not_cause_or_participate_in_harassment_bullying_or_violence_and_to_report_unsafe_work_conditions_although_it_is_not_always_easy_to_do_so_failure_to_do_so_can_have_serious_consequences_such_as_undocumented_injuries_or_workplaces_that_remain_unsafe_there_are_4_hazards_that_relate_to_workplace_health_and_safety">As workers, we have legal responsibility to follow the health and safety rules, to not cause or participate in harassment, bullying, or violence, and to report unsafe work conditions. Although it is not always easy to do so, failure to do so can have serious consequences (such as undocumented injuries, or workplaces that remain unsafe). There are 4 hazards that relate to workplace health and safety:</string>
     <string name="disclaimer_Main">Disclaimer</string>
+    <string name="global_access">Global Access</string>
+    <string name="school_of">School of</string>
 </resources>
