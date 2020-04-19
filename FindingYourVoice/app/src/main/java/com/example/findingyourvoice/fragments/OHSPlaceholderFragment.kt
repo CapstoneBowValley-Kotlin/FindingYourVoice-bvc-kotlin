@@ -1,13 +1,17 @@
 package com.example.findingyourvoice.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.findingyourvoice.ParentActivity
 import com.example.findingyourvoice.R
 import com.example.findingyourvoice.SliderModel
 import com.example.findingyourvoice.adapters.SliderAdapter
+import kotlinx.android.synthetic.main.fragment_employment__standards.*
 import kotlinx.android.synthetic.main.fragment_ohs_place_holder.*
 
 
@@ -24,6 +28,16 @@ class OHSPlaceholderFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // Adding url link to read more
+        button2.setOnClickListener{
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://workershealthcentre.ca/4-health-and-safety-rights/")))
+        }
+
+        //Adding Event to Finding Your Voicr button so that on click it will move to finding your voice page
+        OHS_FYV_button.setOnClickListener {
+            (activity as? ParentActivity)?.openFindVoice()
+        }
 
         val adapter = SliderAdapter(getList())
 
@@ -59,6 +73,7 @@ class OHSPlaceholderFragment : Fragment() {
         list.add(SliderModel("BE FREE FROM \n REPRISAL", "(disciplined or fired) for using our Health and Safety rights"))
         return list
     }
+
 
     companion object {
 

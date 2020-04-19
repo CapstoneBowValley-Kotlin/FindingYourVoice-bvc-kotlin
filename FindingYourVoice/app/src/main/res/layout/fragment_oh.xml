@@ -13,18 +13,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:justificationMode="inter_word"
         android:text="@string/OHS_Content"
         android:textSize="18sp" />
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/current_legist_button"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
-        android:background="@drawable/button_active"
+        android:background="@drawable/workplacesafetylink_buttonstyle"
         android:drawableStart="@drawable/btn_link"
         android:inputType="textImeMultiLine"
         android:text="@string/current_legislation"
@@ -54,7 +56,7 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="700dp" />
+        android:layout_height="700dp"/>
 
 
 </LinearLayout>
