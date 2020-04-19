@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         // Reference home_button
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
+
+        // menu icon will work here
         resource_button.setOnClickListener {
             Log.d("MENU", "Button is clicked")
             startActivity(Intent(this, ParentActivity::class.java))

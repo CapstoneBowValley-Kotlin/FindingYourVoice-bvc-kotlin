@@ -40,7 +40,7 @@ class ParentActivity : AppCompatActivity() {
                 findNavController(R.id.fragment).navigate(R.id.disclaimerFragment)
             }
         }
-
+// add fragments to show on menu page
         nav_view.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_workplace_safety -> {
