@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+
         val myIntent1 = Intent(this, Menu::class.java)
         //val myIntent = Intent(this, ResourcesActivity::class.java)
         // Reference home_button
@@ -25,7 +26,9 @@ class MainActivity : AppCompatActivity() {
              startActivity(myIntent)
          }*/
 
-        // Reference home_button
+        // Initiate Intent to switch pages
+        // Make sure Activity is connected to Parent Activity file.
+        // putExtra: Add extended data to the intent (name: String, value: Boolean)
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
         resource_button.setOnClickListener {
