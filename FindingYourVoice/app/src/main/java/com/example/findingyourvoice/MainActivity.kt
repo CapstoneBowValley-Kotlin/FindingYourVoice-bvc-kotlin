@@ -28,9 +28,12 @@ class MainActivity : AppCompatActivity() {
 
         // Initiate Intent to switch pages
         // Make sure Activity is connected to Parent Activity file.
+        // ParentActivity.kt contains essential fragments for home page (findingYourVoiceFragment),
+        // (workplaceSafetyFragment) and (disclaimerFragment).
         // putExtra: Add extended data to the intent (name: String, value: Boolean)
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
+        //startActivity: Starts an instance of the DisplayMessageActivity that's specified by the Intent
         resource_button.setOnClickListener {
             Log.d("MENU", "Button is clicked")
             startActivity(Intent(this, ParentActivity::class.java))
