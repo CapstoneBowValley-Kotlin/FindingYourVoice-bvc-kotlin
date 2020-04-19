@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         // putExtra: Add extended data to the intent (name: String, value: Boolean)
         // setOnClickListener: A user interface element the user can tap or click to perform an action
         // Log.d: Send a DEBUG log message and log the exception.
-        //startActivity: Starts an instance of the DisplayMessageActivity that's specified by the Intent
         resource_button.setOnClickListener {
             Log.d("MENU", "Button is clicked")
             startActivity(Intent(this, ParentActivity::class.java))

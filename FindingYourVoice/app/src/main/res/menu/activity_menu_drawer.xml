@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    // PAGE IS FOR MENU
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_workplace_safety"
@@ -20,7 +22,7 @@
         <item
             android:id="@+id/nav_occupational_health_and_safety"
             android:icon="@drawable/group209"
-            android:title="Occupational Health and Safety" />
+            android:title="OHS" />
         <item
             android:id="@+id/nav_finding_your_voice"
             android:icon="@drawable/ic_action_name"

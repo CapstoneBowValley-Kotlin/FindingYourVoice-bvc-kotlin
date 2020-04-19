@@ -64,7 +64,7 @@ class OHSPlaceholderFragment : Fragment() {
             slider.setCurrentItem(prevIndex, true)
         }
     }
-
+// add text in fragments , that will be scroll , to different 4 text
     private fun getList(): ArrayList<SliderModel> {
         val list = ArrayList<SliderModel>()
         list.add(SliderModel("KNOW", "about the dangers of our jobs and how we are protected"))
